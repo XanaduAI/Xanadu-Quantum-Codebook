@@ -22,12 +22,6 @@ body:
     validations:
       required: true
   - type: textarea
-    id: implementation
-    attributes:
-      label: Implementation
-      description: |
-        Do you have an idea for how this could be implemented? Please include those details here.
-  - type: textarea
     id: info
     attributes:
       label: Additional information
