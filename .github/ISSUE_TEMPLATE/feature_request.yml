@@ -27,16 +27,6 @@ body:
       label: Implementation
       description: |
         Do you have an idea for how this could be implemented? Please include those details here.
-  - type: dropdown
-    id: urgency
-    attributes:
-      label: How important would you say this feature is?
-      options:
-        - "1: Not important. Would be nice to have."
-        - "2: Somewhat important. Needed this quarter."
-        - "3: Very important! It's holding me back."
-    validations:
-      required: true
   - type: textarea
     id: info
     attributes:
