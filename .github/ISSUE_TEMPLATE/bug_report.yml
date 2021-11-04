@@ -14,6 +14,15 @@ body:
 
           # Issue description
           Description of the issue - include code snippets in the Source code section below and screenshots if relevant.
+  - type: input
+    id: node
+    attributes:
+      label: Node number
+      description: |
+        What node or codercise is producing the bug?
+      placeholder: Node A.5, codercise A.5.2
+    validations:
+      required: true
   - type: textarea
     id: expected
     attributes:
