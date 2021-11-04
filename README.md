@@ -2,7 +2,7 @@
 
 The Xanedu Quantum Codebook is an experimental, exercise-based introduction to
 quantum computing using [PennyLane](https://pennylane.ai). This repository
-contains the all the source text and coding challenge templates in the Codebook;
+contains all the source text and coding challenge templates in the Codebook;
 the Codebook itself is available at [codebook.xanadu.ai](https://codebook.xanadu.ai).
 
 ## Providing feedback and getting help
