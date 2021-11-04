@@ -1,0 +1,65 @@
+name: Bug report
+description: File a bug report
+title: '[BUG]'
+labels: "bug :bug:"
+
+body:
+  - type: markdown
+    id: description
+    attributes:
+      value: |
+          ## Before posting a bug report
+          Search existing GitHub issues to make sure the issue does not already exist:
+          https://github.com/XanaduAI/Xanedu-Quantum-Codebook/issues
+
+          # Issue description
+          Description of the issue - include code snippets in the Source code section below and screenshots if relevant.
+  - type: input
+    id: node
+    attributes:
+      label: Node number
+      description: |
+        What node or codercise is producing the bug?
+      placeholder: Node A.5, codercise A.5.2
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: |
+        What do you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: |
+        What actually happens?
+    validations:
+      required: true
+  - type: textarea
+    id: info
+    attributes:
+      label: Additional information
+      description: |
+        Please provide any additional information here that might be necessary to reproduce the issue. This includes the Codebook version, your system information, and any other relevant details about reproducibility (e.g., percentage of the time the bug reproduces).
+  - type: textarea
+    id: sourcecode
+    attributes:
+      label: Source code
+      description: Please include a minimal non-working example, or any other code related to the issue, here. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: textarea
+    id: tracebacks
+    attributes:
+      label: Tracebacks
+      description: Please include the error tracebacks related to the issue here. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      options:
+        - label: I have searched existing GitHub issues to make sure the issue does not already exist.
+          required: true
