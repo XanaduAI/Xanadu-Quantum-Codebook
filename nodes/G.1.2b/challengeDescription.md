@@ -1,0 +1,1 @@
+***Codercise G.1.2b.*** Complete the code below and verify that after two Grover iterations, the amplitude for the solution state is amplified. The functions ``oracle_matrix(combo)`` and ``diffusion_matrix()`` remain available.
