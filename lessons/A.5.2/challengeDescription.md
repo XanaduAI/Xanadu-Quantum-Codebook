@@ -1,3 +1,0 @@
-We finally have something noticeably different from the uniform distribution. But curiously, whatever the secret combination, the probability distribution is the same, with a big peak at $\mathbf{0}$ and a small probability of observing any other state. Since the output of the circuit doesn't change, we cannot use it to learn the secret combination! But perhaps, like the pair-testing algorithm applied to a lock with multiple solutions, we can learn something else.
-
-<img src="pics/circuit_algos_a52.png">
