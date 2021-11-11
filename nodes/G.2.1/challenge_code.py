@@ -47,7 +47,7 @@ def grover_circuit(combo, num_steps):
             our circuit is to perform.
 
     Returns: 
-        array[complex]: The quantum state (ampltidues) after repeated Grover 
+        array[complex]: The quantum state (amplitudes) after repeated Grover 
         iterations.
     """
     ##################
