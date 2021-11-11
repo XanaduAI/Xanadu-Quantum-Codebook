@@ -14,17 +14,19 @@ Now we know how to simulate a single electron in a magnetic field. What about tw
 As a result, the measured energy of the system will just be the sum of the energy for the first electron and the second electron separately. If the magnetic field points in the $z$-direction (once again, just for simplicity) then the resulting Hamiltonian is
 
 $$
-\hat{H} = \hat{H}_1 + \hat{H}_2 = -\frac{e\hbar B}{2 m_e}(Z_1 + Z_2),
+\hat{H} = \hat{H}_1 + \hat{H}_2 = -\frac{e\hbar B}{2 m_e}(Z_0 + Z_1),
 $$
 
-where $Z_1 = Z \otimes I$ is the Pauli $Z$ operator on the first electron and $Z_2= I \otimes Z$ the Pauli $Z$ on the second. If we wanted to measure the energy in a circuit, we could just take two measurements in the computational basis, and convert them to energies as below:
+where $Z_0 = Z \otimes I$ is the Pauli $Z$ operator on the first
+electron and $Z_1= I \otimes Z$ the Pauli $Z$ on the second. (The subscripts indicating which electron the operator acts on are
+indexed in the same way as wires on PennyLane.) If we wanted to measure the energy in a circuit, we could just take two measurements in the computational basis, and convert them to energies as below:
 
 <img src="pics/twospin.svg" width="520px">
 
 Because these electrons are independent, evolving the system in time should consist of evolving the first and second states independently. We also know what those independent parts look like, since in the last node we learned how to time-evolve an individual electron. So, with $\alpha = eB/2m_e$ as before, we're naturally led to guess that the combined unitary is just a product of unitaries on each electron:
 
 $$
-U = U_1 U_2 = e^{i\alpha t Z_1}e^{i\alpha t Z_2}.
+U = U_1 U_2 = e^{i\alpha t Z_0}e^{i\alpha t Z_1}.
 $$
 
 In circuit form:
@@ -34,16 +36,16 @@ In circuit form:
 Is this neat formula true? Schrödinger's equation tells us that
 
 $$
-U = e^{-i t\hat{H}/\hbar} = e^{i\alpha t(Z_1 + Z_2)}.
+U = e^{-i t\hat{H}/\hbar} = e^{i\alpha t(Z_0 + Z_1)}.
 $$
 
 So our neat formula will be true as long as
 
 $$
-e^{i\alpha t(Z_1 + Z_2)} = e^{i\alpha tZ_1}e^{i\alpha tZ_2}. \tag{1} \label{prod}
+e^{i\alpha t(Z_0 + Z_1)} = e^{i\alpha tZ_0}e^{i\alpha tZ_1}. \tag{1} \label{prod}
 $$
 
-This should seem familiar: it's the usual index law for exponentials, $e^{x+y} = e^xe^y$, but now with matrices $Z_1$ and $Z_2$ instead of numbers $x$ and $y$. And in fact, the proof works the same way! There are lots of ways of defining the exponential, but here is a useful one:
+This should seem familiar: it's the usual index law for exponentials, $e^{x+y} = e^xe^y$, but now with matrices $Z_0$ and $Z_1$ instead of numbers $x$ and $y$. And in fact, the proof works the same way! There are lots of ways of defining the exponential, but here is a useful one:
 
 $$
 e^x = \lim_{n \to \infty}\left(1 + \frac{x}{n}\right)^n.
@@ -94,7 +96,7 @@ We recover (\ref{exp-lhs}) after all, and conclude that $e^{x+y} = e^x e^y$. In 
 
 <img src="pics/exp(x)exp(y).svg" width="800px">
 
-If you want a little more rigor, you can fill in an important mathematical detail in the next exercise.
+If you want a little more rigour, you can fill in an important mathematical detail in the next exercise.
 
 ---
 
@@ -104,7 +106,12 @@ $$
 \left(1 + \frac{x + y}{n} + \frac{xy}{n^2}\right)^n = \left(1 + \frac{x + y}{n}\right)^n + O\left(\frac{1}{n}\right),
 $$
 
-so the correction is suppressed as $n$ gets large. *Hint*. Use the binomial expansion.
+so the correction is suppressed as $n$ gets large.
+
+<details>
+<summary><i>Hint.</i></summary>
+Use the binomial expansion.
+</details>
 
 <details>
 <summary><i>Solution.</i></summary>
@@ -171,10 +178,11 @@ $$
 e^A e^B = e^{A + B}.
 $$
 
-An example is (\ref{prod}), since the Paulis $Z_1$ and $Z_2$ acting on separate electrons can be reordered:
+An example is (\ref{prod}), since the Paulis $Z_0$ and $Z_1$ acting on separate electrons can be reordered:
 
 $$
-Z_1 Z_2 = (Z \otimes I)(I \otimes Z) = Z \otimes Z = (I \otimes Z)(Z \otimes I) = Z_2 Z_1.
+Z_0 Z_1 = (Z \otimes I)(I \otimes Z) = Z \otimes Z = (I \otimes Z)(Z
+\otimes I) = Z_1 Z_0.
 $$
 
 It's easy to see this in terms of the circuit. Since the $Z$ gates act on separate wires, we can freely drag them past each other:
@@ -193,7 +201,7 @@ classically by a term $J \mathbf{S}_1\cdot \mathbf{S}_2$, where $J$
 captures the strength of the interaction. Quantum-mechanically, this leads to a Hamiltonian
 
 $$
-\hat{H} = \hat{H}_1 + \hat{H}_2 + \hat{H}_{12} = -\frac{\hbar Be}{2 m_e}(Z_1 + Z_2) + \frac{J\hbar^2}{4}(X_1X_2 + Y_1Y_2 + Z_1Z_2), \tag{5} \label{Jcouple}
+\hat{H} = \hat{H}_1 + \hat{H}_2 + \hat{H}_{12} = -\frac{\hbar Be}{2 m_e}(Z_0 + Z_1) + \frac{J\hbar^2}{4}(X_0X_1 + Y_0Y_1 + Z_0Z_1), \tag{5} \label{Jcouple}
 $$
 
 since $\mathbf{S} \mapsto {\hbar/2}(X, Y, Z)$. Each of the terms in the Hamiltonian is *individually* easy to exponentiate, as you can check in the next exercise. The problem is that they don't commute!
@@ -203,28 +211,28 @@ since $\mathbf{S} \mapsto {\hbar/2}(X, Y, Z)$. Each of the terms in the Hamilton
 ***Exercise H.5.2.*** (a) Verify that
 
 $$
-e^{i\beta t X_1X_2} = \cos(\beta t) \cdot I + i \sin(\beta t) \cdot X_1X_2.
+e^{i\beta t X_0X_1} = \cos(\beta t) \cdot I + i \sin(\beta t) \cdot X_0X_1.
 $$
 
-Explain why the result is true if we replace $X_1X_2$ by $Y_1Y_2$ or $Z_1Z_2$.
+Explain why the result is true if we replace $X_0X_1$ by $Y_0Y_1$ or $Z_0Z_1$.
 
 (b) Show that the terms in (\ref{Jcouple}) do not commute.
 
 <details>
 <summary><i>Solution.</i></summary>
 
-(a) Since $X_1$ and $X_2$ commute (they act on different electrons), $(X_1X_2)^k = X_1^k X_2^k$. Hence,
+(a) Since $X_0$ and $X_1$ commute (they act on different electrons), $(X_0X_1)^k = X_0^k X_1^k$. Hence,
 
 $$
-e^{i\beta t X_1X_2} = \sum_{k= 0}^\infty \frac{(i\alpha t)^k}{k!} (X_1X_2)^k = \sum_{k= 0}^\infty \frac{(i\alpha t)^k}{k!} X_1^kX_2^k.
+e^{i\beta t X_0X_1} = \sum_{k= 0}^\infty \frac{(i\alpha t)^k}{k!} (X_0X_1)^k = \sum_{k= 0}^\infty \frac{(i\alpha t)^k}{k!} X_0^kX_1^k.
 $$
 
-The even terms are trivial, $X_1^{2k}X_2^{2k} = I$, and hence the odd terms give $X_1^{2k+1}X_2^{2k+1} = X_1X_2$. This is the same as the single Pauli case, so the same formula drops out. In fact, it's clear that if we replace $X_1X_2$ with any matrix $G$ satisfying $G^2 = I$ (such as $G = Y_1Y_2$ or $G = Z_1Z_2$), the same result will hold.
+The even terms are trivial, $X_0^{2k}X_1^{2k} = I$, and hence the odd terms give $X_0^{2k+1}X_1^{2k+1} = X_0X_1$. This is the same as the single Pauli case, so the same formula drops out. In fact, it's clear that if we replace $X_0X_1$ with any matrix $G$ satisfying $G^2 = I$ (such as $G = Y_0Y_1$ or $G = Z_0Z_1$), the same result will hold.
 
-(b) We can look at the terms proportional to, say, $Z_1$ and $X_1X_2$. Since $X_1$ and $Z_1$ *anticommute*, while $Z_1$ and $X_2$ commute, we will have
+(b) We can look at the terms proportional to, say, $Z_0$ and $X_0X_1$. Since $X_0$ and $Z_0$ *anticommute*, while $Z_0$ and $X_1$ commute, we will have
 
 $$
-Z_1 X_1 X_2 = - X_1 Z_1 X_2 = - X_1 X_2 Z_1.
+Z_0 X_0 X_1 = - X_0 Z_0 X_1 = - X_0X_1 Z_0.
 $$
 
 So we won't be able to write the exponential of (\ref{Jcouple}) as a
@@ -297,7 +305,7 @@ Let's see a concrete example of how this works for (\ref{Jcouple}), or rather, a
 ***Exercise H.5.3.***  Consider a Hamiltonian
 
 $$
-\hat{H} = -\frac{\hbar Be}{2 m_e}(Z_1 + Z_2) + \frac{J\hbar^2}{4}X_1X_2.
+\hat{H} = -\frac{\hbar Be}{2 m_e}(Z_0 + Z_1) + \frac{J\hbar^2}{4}X_0X_1.
 $$
 
 Let $U(t)$ by the unitary evolving this system by time $t$. Using (\ref{trotter}), split this evolution into $n$ time steps and write the corresponding unitary $U$.
@@ -308,31 +316,31 @@ Let $U(t)$ by the unitary evolving this system by time $t$. Using (\ref{trotter}
 Let $\alpha = Be/2m_e$ and $\beta = -J\hbar/4$. Then
 
 $$
-U = e^{-it\hat{H}/\hbar} = e^{i\alpha t(Z_1 + Z_2) + i\beta t X_1X_2}.
+U = e^{-it\hat{H}/\hbar} = e^{i\alpha t(Z_0 + Z_1) + i\beta t X_0X_1}.
 $$
 
 Invoking (\ref{trotter}) and interleaving $n$ steps gives
 
 $$
-U(t) = \left[e^{i\alpha t (Z_1 + Z_2)/n}e^{-i\beta tX_1X_2/n}\right]^n + O\left(\frac{1}{n}\right) = \left[e^{i\alpha t Z_1/n}e^{i\alpha t Z_2/n}e^{i\beta tX_1X_2/n}\right]^n + O\left(\frac{1}{n}\right),
+U(t) = \left[e^{i\alpha t (Z_0 + Z_1)/n}e^{-i\beta tX_0X_1/n}\right]^n + O\left(\frac{1}{n}\right) = \left[e^{i\alpha t Z_0/n}e^{i\alpha t Z_1/n}e^{i\beta tX_0X_1/n}\right]^n + O\left(\frac{1}{n}\right),
 $$
 
-since $e^{i\alpha t (Z_1 + Z_2)/n} = e^{i\alpha t Z_1/n}e^{i\alpha t Z_2/n}$. We can then evaluate each term individually. We know from the previous node that
+since $e^{i\alpha t (Z_0 + Z_1)/n} = e^{i\alpha t Z_0/n}e^{i\alpha t Z_1/n}$. We can then evaluate each term individually. We know from the previous node that
 
 $$
 e^{i\alpha tZ/n} = \cos\left(\frac{\alpha t}{n}\right) \cdot I + i \sin \left(\frac{\alpha t}{n}\right) \cdot Z,
 $$
 
-and from the previous exercise
+and from the previous exercise that
 
 $$
-e^{i\beta t X_1X_2/n} = \cos\left(\frac{\beta t}{n}\right) \cdot I + i \sin \left(\frac{\beta t}{n}\right) \cdot X_1X_2.
+e^{i\beta t X_0X_1/n} = \cos\left(\frac{\beta t}{n}\right) \cdot I + i \sin \left(\frac{\beta t}{n}\right) \cdot X_0X_1.
 $$
 
 Thus, we obtain a Trotterized time evolution
 
 $$
-U(t) \approx \left[\left(\cos\left(\frac{\alpha t}{n}\right) \cdot I + i \sin \left(\frac{\alpha t}{n}\right) \cdot Z_1\right)\left(\cos\left(\frac{\alpha t}{n}\right) \cdot I + i \sin \left(\frac{\alpha t}{n}\right) \cdot Z_2\right)\left(\cos\left(\frac{\beta t}{n}\right) \cdot I + i \sin \left(\frac{\beta t}{n}\right) \cdot X_1X_2\right)\right]^n,
+U(t) \approx \left[\left(\cos\left(\frac{\alpha t}{n}\right) \cdot I + i \sin \left(\frac{\alpha t}{n}\right) \cdot Z_0\right)\left(\cos\left(\frac{\alpha t}{n}\right) \cdot I + i \sin \left(\frac{\alpha t}{n}\right) \cdot Z_1\right)\left(\cos\left(\frac{\beta t}{n}\right) \cdot I + i \sin \left(\frac{\beta t}{n}\right) \cdot X_0X_1\right)\right]^n,
 $$
 
 with each piece easily simulable on a quantum computer. ▢
@@ -361,7 +369,7 @@ This lets us extend the results of ***Exercise H.5.3*** to more complicated Hami
 
 ---
 
-***Exercise H.5.4.*** *Bonus.* Derive (\ref{trotterL}) by generalizing the derivation of (\ref{trotter}).
+***Exercise H.5.4.*** *Bonus.* Derive (\ref{trotterL}) by generalizing the proof of (\ref{trotter}).
 
 <details>
 <summary><i>Solution.</i></summary>

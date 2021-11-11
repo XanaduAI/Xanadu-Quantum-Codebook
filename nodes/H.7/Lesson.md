@@ -24,7 +24,7 @@ $$
 Recall that this circuit non-deterministically realizes the linear combination
 
 $$
-\tilde{U} = I + tU + \frac{1}{2}t^2U^2
+\tilde{U} = I + tU + \frac{1}{2}t^2U^2.
 $$
 
 First of all, note that we can move the gates $V_{t/2}, V^\dagger_{t/2}$ outside the controlled subcircuit, since they will simply cancel if the subcircuit is not triggered:
@@ -45,7 +45,7 @@ $$
 The repetition of $U^0$ is annoying. Suppose that, as part of the
 PREPARE routine, and after we apply the gates $V_t, V_{t/2}$), we can
 apply a measurement which checks if we are in the state $\vert
-10\rangle$ or not in this state. With some probabability, we are *not*
+10\rangle$ or not in this state. With some probability, we are *not*
 in this state. In this case, PREPARE acts on the auxiliary register as follows:
 
 $$
@@ -88,7 +88,7 @@ $$
 where $\vert 0\rangle$ is the initial state of the auxiliary register
 and the $\vert j\rangle$ form an orthonormal basis for the auxiliary
 system. These two routines are often viewed as *oracles*, i.e., black
-boxes with specified behavior.
+boxes with specified behaviour.
 
 ---
 
@@ -187,14 +187,12 @@ them to present them in the form given here.
 This was not just an exercise in abstraction!
 The PREPARE and SELECT oracles turn out to be useful for a broader
 range of tasks than performing a linear combination of unitaries.
-In the next node, we will see how they can used for yet another method
-of Hamiltonian simulation.
-But we'll end this node on a somewhat different note, and apply them
+We'll end this node on a somewhat different note, and apply them
 to quantum memory!
 
 Suppose we have a number of memory cells in our quantum computer, indexed by
 $j$.
-We would like to retrieve data from them and even place it in superpositions.
+We would like to retrieve data from them and even place it in superposition.
 One approach is to create (1) an **address register** for storing the index $j$, with a
 corresponding orthonormal set of states $\vert j\rangle_A$, and (2) a **data register**
 for storing (quantum or classical) data in the form of states $\vert D_j\rangle_D$.
@@ -220,7 +218,7 @@ $$
 
 You can check this below.
 The moral is that PREPARE and SELECT are not only relevant to Hamiltonian
-simulation, but quantum architecture design!
+simulation!
 
 ---
 

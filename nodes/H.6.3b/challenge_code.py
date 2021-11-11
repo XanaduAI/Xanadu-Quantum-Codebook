@@ -10,8 +10,7 @@
 """
 
 challenge_code = '''def exp_U_second(U, t):
-    """
-    Implement the second-order approximation of exp(tU).
+    """Implement the second-order approximation of exp(tU).
     
     Args:
         U (array): A unitary matrix, stored as a complex array.

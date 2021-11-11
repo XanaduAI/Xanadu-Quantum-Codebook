@@ -23,5 +23,5 @@ def my_circuit():
     ##################
     return qml.state()
 
-print("The amplitudes on the main register are proportional to", my_circuit()[:2], ".")
+print("The amplitudes on the main register are proportional to", my_circuit()[:4], ".")
 '''

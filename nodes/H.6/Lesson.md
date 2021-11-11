@@ -116,7 +116,7 @@ series are not unitary, even when the Hamiltonian $\hat{H}$ is!
 Instead, it is a sum of unitaries with coefficients, aka a linear
 combination of unitaries.
 This is where the name comes from!
-Thus, we need to genralize our circuit from sums to linear combinations.
+Thus, we need to generalize our circuit from sums to linear combinations.
 In fact, this will also work for time evolution with Hamiltonians of
 the form
 
@@ -125,7 +125,7 @@ $$
 $$
 
 where each $U_j$ is unitary. When we write the Taylor series and
-truncate it, each power of $\hat{H}$ will get expanding into products
+truncate it, each power of $\hat{H}$ will get expanded into products
 of unitaries (which are unitary) with coefficients!
 
 To warm us up, let's start with a linear combination of two unitaries:

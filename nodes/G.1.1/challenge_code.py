@@ -34,7 +34,7 @@ def oracle_amp(combo):
         combo (list[int]): A list of bits representing the secret combination.
 
     Returns: 
-        array[complex]: Amplitudes for observing different outcomes.
+        array[complex]: The quantum state (amplitudes) after applying the oracle.
     """
     ##################
     # YOUR CODE HERE #

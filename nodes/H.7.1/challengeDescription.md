@@ -25,12 +25,13 @@ orthonormal basis for the auxiliary system with initial state $\vert
 0\rangle$.
 
 Since we have only specified how the PREPARE oracle acts on
-the state $\vert 0\rangle$, we have the freedom to complete it to a
-unitary which performs this. A convenient choice is the *Householder
+the state $\vert 0\rangle$, we have the freedom to choose *any*
+unitary which performs this. It doesn't matter what it does to the
+states orthogonal to $\vert 0\rangle$! A convenient choice is the *Householder
 transformation*. For a state $\vert v\rangle$, this is defined as
 
 $$
-R_v = I - \vert v\rangle\langle v \vert.
+R_v = I - 2 \vert v\rangle\langle v \vert.
 $$
 
 Let's start by coding up this transformation.

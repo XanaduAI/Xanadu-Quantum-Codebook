@@ -13,8 +13,7 @@ challenge_code = '''n_bits = 4
 dev = qml.device("default.qubit", wires=n_bits)
 
 def multisol_oracle_matrix(combos):
-    """
-    Return the oracle matrix for a set of solutions.
+    """Return the oracle matrix for a set of solutions.
 
     Args:
         combos (list[list[int]]): A list of secret bit strings.
@@ -33,7 +32,7 @@ def multisol_pair_circuit(x_tilde, combos):
     """Implements the circuit for testing a pair of combinations labelled by x_tilde.
     
     Args:
-        x_tilde (list[int]): An (n_bits - 1)-string labelling the pair to test.
+        x_tilde (list[int]): An (n_bits - 1)-bit string labelling the pair to test.
         combos (list[list[int]]): A list of secret bit strings.
 
     Returns:

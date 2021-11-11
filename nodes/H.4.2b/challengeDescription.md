@@ -2,4 +2,4 @@ The ground state minimizes the energy. If the graph is bipartite, then we can "c
 
 <img src="pics/ground-state.svg" width="200px">
 
-***Codercise H.4.2b.*** Determine the two ground states and check they give the expected energy.
+(b) Determine the two ground states and check they give the expected energy.

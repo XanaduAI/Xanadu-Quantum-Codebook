@@ -1,4 +1,4 @@
-***Codercise H.7.1b.*** The circuit below shows a PREPARE oracle
+(b) The circuit below shows a PREPARE oracle
    (red), followed by a SELECT oracle (blue), followed by
    PREPARE${^\dagger}$ (red):
 

@@ -15,4 +15,4 @@ Because of this nice pattern in the probability of observing $\mathbf{0}$, we ca
 
 ---
 
-***Codercise A.6.2.*** Implement the Deutsch-Jozsa algorithm. Choose a constant or balanced function based on the ``promise_var`` flag, then implement the circuit from above to determine which.
+***Codercise A.6.2.*** Implement the Deutsch-Jozsa algorithm. Given a constant or balanced function based on the ``promise_var`` flag, implement the circuit from above to determine which it is. The function `multisol_hoh_circuit` from the previous exercise is available for you to use.

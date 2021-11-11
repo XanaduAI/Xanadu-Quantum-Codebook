@@ -29,8 +29,9 @@ def difforacle_amp(combo):
     Args:
         combo (list[int]): A list of bits representing the secret combination.
 
-    Returns: 
-        array[complex]: Amplitudes for observing different outcomes.
+    Returns:
+        array[complex]: The quantum state (amplitudes) after applying the oracle
+        and diffusion.
     """
     ##################
     # YOUR CODE HERE #

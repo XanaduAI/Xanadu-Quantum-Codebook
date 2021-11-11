@@ -24,7 +24,7 @@ def apply_cnot(basis_id):
 
     # Prepare the basis state |basis_id>
     bits = [int(x) for x in np.binary_repr(basis_id, width=dev.num_wires)]
-    qml.templates.BasisStatePreparation(bits, wires=[0, 1])
+    qml.BasisStatePreparation(bits, wires=[0, 1])
 
     ##################
     # YOUR CODE HERE #

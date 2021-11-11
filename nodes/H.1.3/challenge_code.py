@@ -9,12 +9,13 @@
     Use triple single quotes to enclose the formatted code block.
 """
 
-challenge_code = '''n_bits = 1
-dev = qml.device("default.qubit", wires=n_bits)
+challenge_code = '''dev = qml.device("default.qubit", wires=1)
 
 input = 0 # MODIFY EXAMPLE
 reps = 1
-print("The probability distribution after applying the secret box to ", input, "a total of ", reps, "times is ", secret_box(input, reps), ".")
+print("The probability distribution after applying the secret box to ", input)
+print("a total of ", reps, "time(s) is ")
+# We will secretly apply the function and return the result!
 
 @qml.qnode(dev)
 def quantum_box(bit, reps):
@@ -23,6 +24,9 @@ def quantum_box(bit, reps):
     Args:
         bit (int): A bit representing an initial condition.
         reps (int): Number of times gate is repeated.
+
+    Returns:
+        list[float]: The output probability distribution.
     """
     if bit == 1:
         qml.PauliX(wires=0)
@@ -31,5 +35,5 @@ def quantum_box(bit, reps):
         # YOUR CODE HERE #
         ##################
         pass
-    return qml.probs(wires=range(n_bits))
+    return qml.probs(wires=0)
 '''

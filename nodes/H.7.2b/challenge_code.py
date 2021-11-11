@@ -17,12 +17,12 @@ challenge_code = '''def SELECT(U_list):
                                    wires=main, control_values=ctrl_str)
 
 def LCU(alpha_list, U_list):
-    """
-    Implement LCU using PREPARE and SELECT oracles for 2^k unitaries.
+    """Implement LCU using PREPARE and SELECT oracles for 2^k unitaries.
     
     Args:
         alpha_list (list[float]): A list of coefficients.
-        U_list (list[array[complex]]): A list of unitary matrices, stored as complex arrays.
+        U_list (list[array[complex]]): A list of unitary matrices, stored as 
+        complex arrays.
     """
     ##################
     # YOUR CODE HERE #

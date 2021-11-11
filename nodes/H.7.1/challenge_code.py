@@ -10,11 +10,10 @@
 """
 
 challenge_code = '''def householder(state):
-    """
-    Create the matrix form of a Householder transformation.
+    """Create the matrix form of a Householder transformation.
     
     Args:
-        state (list[complex]): A list of amplitudes representing a state.
+        state (array[complex]): A list of amplitudes representing a state.
 
     Returns: 
         array[complex]: The matrix representation of the Householder transformation.

@@ -18,7 +18,7 @@ challenge_code = '''v = np.array([0.52889389-0.14956775j, 0.67262317+0.49545818j
 # CREATE A DEVICE
 
 
-# CONSTRUCT A QNODE THAT USES qml.templates.MottonenStatePreparation
+# CONSTRUCT A QNODE THAT USES qml.MottonenStatePreparation
 # TO PREPARE A QUBIT IN STATE V, AND RETURN THE STATE
 
 def prepare_state(state=v):

@@ -96,8 +96,8 @@ $$
 Thus,
 
 $$
-\sum_{\mathbf{y}} \vert \mathbf{y}\rangle \langle \mathbf{y}\vert
-\mathbf{x}\rangle = 1
+\sum_{\mathbf{y}} \langle \mathbf{x}\vert  U^\dagger\vert
+\mathbf{y}\rangle\langle \mathbf{y}\vert  U\vert \mathbf{x}\rangle = 1
 $$
 
 is equivalent to (\ref{diag}). ▢

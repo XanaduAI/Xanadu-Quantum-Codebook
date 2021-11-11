@@ -2,7 +2,7 @@ Recall that a single Grover step consists in applying the oracle and
 then the diffusion operator:
 
 ```python
-grover_op_matrix = diffusion_matrix() @ oracle_matrix(combo)
+grover_op_matrix = np.dot(diffusion_matrix(), oracle_matrix(combo))
 ```
 <br>
 

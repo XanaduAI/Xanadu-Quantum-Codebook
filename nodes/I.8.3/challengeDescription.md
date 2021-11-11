@@ -9,17 +9,17 @@ used in quantum circuits just like any other gate:
 
 ```python
 def my_circuit():
-    qml.templates.MyTemplate(parameters, wires)
+    qml.MyTemplate(parameters, wires)
 ```
 
-PennyLane contains a *template* called
-[`MottonenStatePreparation`](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.templates.state_preparations.MottonenStatePreparation.html),
+PennyLane contains a template called
+[`MottonenStatePreparation`](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.MottonenStatePreparation.html),
 which will automatically prepare any normalized qubit state vector, up to a
 global phase. You need only pass the template a normalized state vector, and a
 set of wires.  This is especially convenient for multi-qubit systems, where it
 would be challenging to find state preparation circuits by hand.
 
-***Codercise I.8.3.*** Write a QNode that uses `qml.templates.MottonenStatePreparation`
+***Codercise I.8.3.*** Write a QNode that uses `qml.MottonenStatePreparation`
  to prepare the state
 
 $$

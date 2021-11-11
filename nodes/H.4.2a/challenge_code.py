@@ -10,29 +10,24 @@
 """
 
 challenge_code = '''n_bits = 5
-dev = qml.device("default.qubit", wires=n_bits, shots=None)
-
-
+dev = qml.device("default.qubit", wires=n_bits)
+    
 ##################
 # YOUR CODE HERE #
 ##################
-    
 coeffs = [1] # MODIFY THIS
 obs = [qml.PauliZ(0)] # MODIFY THIS
 H = qml.Hamiltonian(coeffs, obs)
 
-# Specify circuit
-def circuit(init, **kwargs):
-    """Circuit for initializing state.
+@qml.qnode(dev)
+def energy(init):
+    """Circuit for measuring expectation value of Hamiltonian in a given state.
     
     Args:
-        init (list): An initial computational basis state, specified by five bits.
-    """
-    ##################
-    # YOUR CODE HERE #
-    ##################
-    pass
+        init (list[int]): An initial computational basis state, specified by five bits.
 
-# Invoke ExpvalCost
-cost_fn = qml.ExpvalCost(circuit, H, dev)
-'''
+    Returns: 
+        float: Expectation value of the Hamiltonian H.
+    """
+    qml.BasisState(init, wires=range(n_bits))
+    return qml.expval(H)'''

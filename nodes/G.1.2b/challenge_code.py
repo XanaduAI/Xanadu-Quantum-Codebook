@@ -17,7 +17,7 @@ def two_difforacle_amp(combo):
         combo (list[int]): A list of bits representing the secret combination.
 
     Returns: 
-        array[complex]: Amplitudes for observing different outcomes.
+        array[complex]: The resulting quantum state.
     """
     ##################
     # YOUR CODE HERE #

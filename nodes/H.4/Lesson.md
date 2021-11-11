@@ -2,15 +2,15 @@
 
 **Learning outcomes**
 
-- *Describe the utility of diagonalizing a Hamiltonian for simulation, and diagonalize in a simple case.*
+- *Describe the utility of diagonalizing a Hamiltonian for simulation, and diagonalize a simple case.*
 - *See how nontrivial computational problems can be encoded in ground states.*
 
 ---
 
 You might wonder if understanding the physics of a Hamiltonian will
 give us some shortcuts for simulating the corresponding system. This
-turns out to be true! We can generalize the observation that $Z$
-exponentiated acts simply on eigenvectors of $Z$, for instance,
+turns out to be true! We can generalize the observation that $Z$, when
+exponentiated, acts simply on eigenvectors of $Z$, for instance,
 
 $$
 e^{i\alpha t Z} \vert 0\rangle = e^{i\alpha t} \vert 0\rangle,
@@ -196,7 +196,7 @@ The ground state will correspond to an assignment of red and blue such that each
 The Hamiltonian is then
 
 $$
-\hat{H} = Z_1 Z_2 + Z_2Z_3 + Z_2 Z_4 + Z_4Z_5.
+\hat{H} = Z_0 Z_1 + Z_1Z_2 + Z_1 Z_3 + Z_3Z_4.
 $$
 
 To actually generate a good guess at the ground state $\vert

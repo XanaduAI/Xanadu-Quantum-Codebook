@@ -1,4 +1,4 @@
-Trotterization approximates time evolution but reexpressing the full
+Trotterization approximates time evolution by reexpressing the full
 Taylor series as a product of simpler Taylor series.
 Another way to approximate this evolution is to truncate the Taylor series at some term $K$:
 
@@ -11,7 +11,7 @@ a weighted sum of unitary operators (as in the case of spins, where
 terms are built of out Pauli operators, e.g., $\alpha Z \otimes Z$),
 then each term in the sum will be proportional to a unitary, since a product of unitary matrices is unitary. So the problem reduces to implementing a **linear combination of unitaries (LCU)**.
 
-As a warm-up, let's consider the problem of adding two unitaries, $U$ and $V$, and applying them to an arbitrary states:
+As a warm-up, let's consider the problem of adding two unitaries, $U$ and $V$, and applying them to an arbitrary state:
 
 $$
 \vert \psi\rangle \to (U + V) \vert \psi\rangle.
@@ -25,7 +25,10 @@ Here is the circuit:
 
 <img src="pics/h-circuit.svg" width="400px">
 
-The top wire is an auxiliary qubit we measure as part of our circuit, while the bottom wire is the main register carrying the state we want to apply the combined operation to. If the outcome is $0$, then the outcome (to normalization) is
+The top wire is an auxiliary qubit we measure as part of our circuit,
+while the bottom wire is the main register carrying the state we want
+to apply the combined operation to. If the outcome is $0$, then the
+outcome (up to normalization) is
 
 $$
 (U + V)\vert \psi\rangle.

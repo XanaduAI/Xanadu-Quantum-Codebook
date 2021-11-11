@@ -15,8 +15,7 @@ challenge_code = '''def V(t):
                     [1/np.sqrt(t+1), np.sqrt(t)/np.sqrt(t+1)]])
 
 def exp_U_first(U, t):
-    """
-    Implement the first two terms in the Taylor series for exp(tU).
+    """Implement the first two terms in the Taylor series for exp(tU).
     
     Args:
         U (array): A unitary matrix, stored as a complex array.

@@ -12,7 +12,7 @@ forum](https://discuss.pennylane.ai/) using the Codebook category. Please refer
 explicitly to the codercise number (e.g., Codercise T.2).
 
 If you think you've found an error in the contents or an issue with the autograder, please
-report this on our [Github page](https://github.com/XanaduAI/Xanedu-Quantum-Codebook) by
+report this on our [GitHub page](https://github.com/XanaduAI/Xanedu-Quantum-Codebook) by
 creating a new issue. 
 
 ## Known issues

@@ -12,7 +12,7 @@
 challenge_code = '''aux = [0, 1]
 main = 2
 all_bits = range(3)
-dev = qml.device("default.qubit", wires=all_bits, shots=None)
+dev = qml.device("default.qubit", wires=all_bits)
 
 # Part (i)
 

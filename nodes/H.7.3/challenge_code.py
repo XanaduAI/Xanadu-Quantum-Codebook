@@ -11,14 +11,13 @@
 
 challenge_code = '''@qml.qnode(dev)
 def quantum_memory(beta_list):
-    """
-    Produce a data state with positive coefficients beta_list.
+    """Produce a data state with positive coefficients beta_list.
 
     Args:
-        beta_list (list[float]): The amplitudes for our superposition.
+        beta_list (array[float]): The amplitudes for our superposition.
 
     Returns: 
-        list[float]: The state on both address and data registers.
+        array[float]: The state on both address and data registers.
     """
     U_list = [np.identity(2), np.identity(2), 
               np.identity(2), np.identity(2)] # MODIFY THIS

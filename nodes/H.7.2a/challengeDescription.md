@@ -1,11 +1,11 @@
 ---
 
-We'll define the PREPARE oracle is the Householder transformation
+We'll define the PREPARE oracle as the Householder transformation
 associated with the state
 
 $$
-\langle 0 - \alpha\vert  =\frac{\vert 0\rangle - \vert
-\alpha \rangle)}{\vert \vert 0\rangle - \vert
+\vert 0 - \alpha\rangle  =\frac{\vert 0\rangle - \vert
+\alpha \rangle}{\vert \vert 0\rangle - \vert
 \alpha \rangle \vert}.
 $$
 
@@ -18,7 +18,7 @@ You can implement this in the next exercise.
 
 ---
 
-***Codercise H.7.2a.*** Implement the PREPARE oracle using the
+***Codercise H.7.2.*** (a) Implement the PREPARE oracle using the
    Householder transformation; this is available from the previous exercise. For simplicity, we work with a sum of $2^k$
    unitaries. This means our auxiliary register will have $k$ qubits,
    and the state $\vert 0\rangle$ is the all-zero state (usually

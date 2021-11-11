@@ -14,4 +14,4 @@ On the other hand, if we don't know the number of solutions, then we can test in
 
 ---
 
-***Codercise A.4.1.*** Implement the circuit above, but now for ``how_many`` solutions instead of one. You will first need to implement multi-solution version of the oracle matrix, ``multisol_oracle_matrix(combos)``, which takes a list of bit strings (representing different solutions) and returns the associated oracle in matrix form.
+***Codercise A.4.1.*** Implement the circuit above, but now for ``how_many`` solutions instead of one. You will first need to implement the multi-solution version of the oracle matrix, ``multisol_oracle_matrix(combos)``, which takes a list of bit strings (representing different solutions) and returns the associated oracle in matrix form.

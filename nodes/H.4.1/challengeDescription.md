@@ -41,7 +41,7 @@ e^{-itE_1/\hbar} & & & \\
 $$
 
 There are two reasons diagonalization is not the magical hack it first
-appears. First, $\hat{H}$ is an $N \times N$ matrix, where $N = 2^n$
+appears to be. First, $\hat{H}$ is an $N \times N$ matrix, where $N = 2^n$
 for $n$ qubits. This is exponential in the number of qubits, and
 finding its eigenvalues takes an exponentially long time. But even
 when we know the diagonal form of the Hamiltonian, implementing the
@@ -68,6 +68,6 @@ where $\theta = 2\alpha t/\hbar$.
 
 ***Codercise H.4.1.*** Implement the circuit drawn above, allowing for the specification of an initial computational basis state.
 
-*Tip.* Try using <a
- href="https://pennylane.readthedocs.io/en/stable/code/api/pennylane.BasisState.html"
- target=_"blank"><tt>qml.BasisState</tt></a> to prepare the basis state.
+*Tip.* Try using 
+<a href="https://pennylane.readthedocs.io/en/stable/code/api/pennylane.BasisState.html" target="_blank"><tt>qml.BasisState</tt></a> 
+to prepare the basis state.

@@ -8,10 +8,11 @@ Your random guess will involve a single input bit.
 
 ---
 
-***Codercise H.1.2.*** We've provided some code to let you approximate
-   the probability distribution. You can change ``trials`` for better
-   approximation.
+***Codercise H.1.2.*** Your goal is to estimate the random update
+   rule. You can run the black box a number of times (controlled by a
+   variable ``trials``) and estimate the probability
+   distribution using the provided code.
 
-*Tip.* Use Numpy's
+*Tip.* Use NumPy's
  [``np.random.choice()``](https://numpy.org/doc/stable/reference/random/generated/numpy.random.choice.html)
  function.

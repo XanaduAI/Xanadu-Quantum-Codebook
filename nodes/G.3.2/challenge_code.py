@@ -19,7 +19,9 @@ challenge_code = '''def hadamard_transform(my_wires):
         qml.Hadamard(wires=wire)
 
 def diffusion():
-    """Implement the diffusion operator using the Hadamard transform and multicontrolled X."""
+    """Implement the diffusion operator using the Hadamard transform and 
+    multi-controlled X."""
+
     ##################
     # YOUR CODE HERE #
     ##################
