@@ -34,7 +34,7 @@ the energy of the system is lower when the little magnet is aligned.
 This is captured by the Hamiltonian
 
 $$
-\hat{H} = -\frac{\hbar eB}{2m_e} Z = \alpha \hbar Z, \tag{2} \label{ham-z}
+\hat{H} = -\frac{\hbar eB}{2m_e} Z = -\alpha \hbar Z, \tag{2} \label{ham-z}
 $$
 
 where $Z$ is the Pauli $Z$, $e = 1.6 \times 10^{-19}$ C is the charge
@@ -58,8 +58,8 @@ e^{-it\hat{H}/\hbar} & = e^{i\alpha t Z} \\
 \sin(\alpha t) \cdot Z \tag{3} \label{ham} \\
 & =
 \begin{bmatrix}
-\cos(\alpha t) - i \sin (\alpha t) & \\
-& \cos(\alpha t) + i \sin (\alpha t)
+\cos(\alpha t) + i \sin (\alpha t) & 0 \\
+0 & \cos(\alpha t) - i \sin (\alpha t)
 \end{bmatrix}.
 \end{align*}
 $$

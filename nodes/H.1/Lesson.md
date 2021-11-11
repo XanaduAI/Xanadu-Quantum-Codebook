@@ -2,12 +2,12 @@
 
 **Learning outcomes**
 
-- *Understand the distinction between the behaviour of deterministic, random, and quantum systems*
+- *Describe the distinction between the behaviour of deterministic, random, and quantum systems.*
 
 ---
 
 What makes quantum computing fundamentally different from classical computing?
-In a word, the physics going on inside the computer.
+Very briefly, the physics going on inside the computer.
 To help understand this, it's useful to abstract from specific computational models, and instead think about physical systems in general as black boxes where initial conditions go in, we wait for some time, and then observe. In between, physics happens. The job of a physicist is to work out the laws of Nature which govern the "in between", also called the *time evolution* or *dynamics* of the system.
 
 <img src="pics/nature.svg" width="700px">
@@ -18,11 +18,11 @@ Often, even knowing the laws of physics does not allow us to predict what the bl
 
 Most physical laws are continuous, in the sense that they act on systems that cannot be split into a finite set of components. In contrast, most computers (though not all, e.g., a slide rule) are *discrete*, acting only on a finite number of components. So to turn continuous laws into discrete computations, we need to *approximate*. The better we want our approximation to be, the more computing power we will need, measured either in computing steps or memory allocation. Computing power therefore turns out to be a major limiting factor in how well we can understand the complicated physical systems around us.
 
-Let's talk about some broad classes of black boxes. The first is **classical deterministic systems**, where a given input always produces the same output. "Classical" here refers to "classical physics", the set of Natural laws governing the macroscopic world and with which we are most familiar. Most of classical physics, from mechanics to electromagnetism to gravity, takes the form a classical deterministic box.
+Let's talk about some broad classes of black boxes. The first is **classical deterministic systems**, where a given input always produces the same output. "Classical" here refers to "classical physics", the set of natural laws governing the macroscopic world and with which we are most familiar. Most of classical physics, from mechanics to electromagnetism to gravity, takes the form of a classical deterministic box.
 
 <img src="pics/deterministic.svg" width="450px">
 
-Our model problem will involve coins, though really, this is just a colorful way to talk about binary digits. So, let's consider a system of $n$ coins lying on a table. Each coin can be in one of two states: heads ($0$) or tails ($1$). We will describe the state of the system by a vector of $n$ bits, $\mathbf{x} = (x_1, x_2, \ldots, x_n) \in \{0, 1\}^n.$
+Our model problem will involve coins, though really, this is just a colourful way to talk about binary digits. So, let's consider a system of $n$ coins lying on a table. Each coin can be in one of two states: heads ($0$) or tails ($1$). We will describe the state of the system by a vector of $n$ bits, $\mathbf{x} = (x_1, x_2, \ldots, x_n) \in \{0, 1\}^n.$
 
 ---
 
@@ -41,7 +41,7 @@ Our model problem will involve coins, though really, this is just a colorful way
 
 ---
 
-A second, more general class is **classical random systems**. Here, an input sometimes results in one output, sometimes in another, with the output varying randomly. One way this randomness can arise is from dynamics which are in fact determistic, but where we ignore (or don't have access to) certain details of the system. The most famous example is *statistical mechanics*, the mathematical formalism underlying thermodynamics. It turns out that it is not just impossible, but useless and unnecessary, to keep track of the precise deterministic evolution of each of the $\sim 10^{26}$ particles in a handful of dust. It is much better to talk about the statistical tendencies of this handful!
+A second, more general class is **classical random systems**. Here, an input sometimes results in one output, sometimes in another, with the output varying randomly. One way this randomness can arise is from dynamics which are in fact deterministic, but where we ignore (or don't have access to) certain details of the system. The most famous example is *statistical mechanics*, the mathematical formalism underlying thermodynamics. It turns out that it is not just impossible, but useless and unnecessary, to keep track of the precise deterministic evolution of each of the $\sim 10^{26}$ particles in a handful of dust. It is much better to talk about the statistical tendencies of this handful!
 
 <img src="pics/random.svg" width="450px">
 
@@ -105,7 +105,7 @@ as above. This looks very similar to the classical random case, and it's temptin
 
 ---
 
-***Exercise H.1.4.*** (a) Consider a single-qubit quantum circuit consisting of a single Hadamard gate $H$. Write down the conditional probabilities $p(y\vert x)$ for measurement outcome $y$ after applying this "black box" to input $x$, where $x, y \in \{0, 1\}$.
+***Exercise H.1.4.*** (a) Consider a single-qubit quantum circuit consisting of a single Hadamard gate $H$. Write down the conditional probabilities $p(y\vert x)$ for measurement outcome $y$ after applying this "black box" to input state $\vert x\rangle$, where $x, y \in \{0, 1\}$.
 
 (b) If this black box was classically random, call it $\tilde{H}$, what would be the result of applying it twice? What is the probability distribution after applying two Hadamard gates?
 

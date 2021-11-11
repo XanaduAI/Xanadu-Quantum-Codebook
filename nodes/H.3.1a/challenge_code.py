@@ -17,10 +17,11 @@ challenge_code = '''def mag_z_unitary(B, time):
         time (float): The time (t) we evolve the electron state for.
         
     Returns:
-        array[float]: The unitary matrix implementing time evolution.
+        array[complex]: The unitary matrix implementing time evolution.
     """
     e = 1.6e-19
     m_e = 9.1e-31
+    alpha = B*e/(2*m_e)
     ##################
     # YOUR CODE HERE #
     ##################

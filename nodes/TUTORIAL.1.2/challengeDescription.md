@@ -14,7 +14,7 @@ predefined function. Everything can be done using only standard Python,
 and two special libraries:
 
  - NumPy, which is available as `np`
- - PennyLane, which is available as `qml`
+ - PennyLane (v0.19), which is available as `qml`
 
 These two packages are imported into every code cell, and can be invoked as
 above. The available NumPy version is that provided by PennyLane, which

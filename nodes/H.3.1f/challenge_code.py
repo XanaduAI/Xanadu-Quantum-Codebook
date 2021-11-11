@@ -9,7 +9,4 @@
     Use triple single quotes to enclose the formatted code block.
 """
 
-challenge_code = '''##################
-# CONTINE ON.... #
-##################
-'''
+challenge_code = '''# Press submit to continue to the next node'''

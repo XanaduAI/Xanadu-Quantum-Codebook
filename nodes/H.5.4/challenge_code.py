@@ -11,8 +11,7 @@
 
 challenge_code = '''@qml.qnode(dev)
 def two_close_spins(B, J, time, n):
-    """
-    Circuit for evolving state of two nearby electrons with an arbitrary coupling.
+    """Circuit for evolving state of two nearby electrons with an arbitrary coupling.
     
     Args:
         B (float): The strength of the field, assumed to point in the z direction.
@@ -21,7 +20,7 @@ def two_close_spins(B, J, time, n):
         n (int): The number of steps in our Trotterization.
 
     Returns: 
-        array[complex]: Amplitudes for observing different outcomes.
+        array[complex]: The quantum state after evolution.
     """
     ##################
     # YOUR CODE HERE #

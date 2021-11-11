@@ -17,11 +17,10 @@ main = range(k_bits, all_bits)
 dev = qml.device("default.qubit", wires=all_bits)
 
 def PREPARE(alpha_list):
-    """
-    Create the PREPARE oracle as a matrix.
+    """Create the PREPARE oracle as a matrix.
     
     Args:
-        alpha_list (list[float]): A list of coefficients.
+        alpha_list (array[float]): A list of coefficients.
 
     Returns: 
         array[complex]: The matrix representation of the PREPARE routine.

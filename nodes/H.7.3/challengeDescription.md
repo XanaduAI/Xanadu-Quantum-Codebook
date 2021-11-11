@@ -6,13 +6,13 @@ memory on a quantum computer!
 We imagine that the auxiliary states $\vert j\rangle_A$ are memory
 addresses and the main register stores data $\vert D_j\rangle_D$,
 prepared from some initial state $\vert 0\rangle_D$ by acting with a unitary, $\vert
-D_j\rangle_D = U_j \vert 0\rangle_D$.
-We've added subscrips for clarity.
+D_j\rangle_D = U_j \vert 0\rangle_D$
+(we've added subscripst for clarity.)
 The quantum computer may wish not only to retrieve individual states
 from their addresses, but to create an arbitrary superposition of data
 states.
 In order to remember which data belongs where, we assume they remain
-correlated with their addresses, so our quantum memory task is to take
+correlated with their addresses, so the task of our is to take
 the initial state $\vert 0\rangle_A \vert 0\rangle_D$ to a state of the form
 
 $$
@@ -42,4 +42,4 @@ $$
 $$
 
 Is this correctly producing the maximally entangled state, $(\vert
-00\rangle + \vert 11\rangle$)/\sqrt{2}?
+00\rangle + \vert 11\rangle)/\sqrt{2}$?

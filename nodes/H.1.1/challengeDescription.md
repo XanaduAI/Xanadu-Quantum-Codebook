@@ -15,7 +15,7 @@ Let's start with a simple *deterministic* warm-up example, where the same input 
 <img src="pics/deterministic.svg" width="450px">
 
 In the code box below, you can print the result of applying the box to
-an aribtrary input using ``secret_box(bits)``.
+an arbitrary input using ``secret_box(bits)``.
 
 ---
 

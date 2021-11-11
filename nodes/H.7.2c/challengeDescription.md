@@ -1,4 +1,4 @@
-***Codercise H.7.1c.*** Finally, consider the combination of unitaries
+(c) Finally, consider the combination of unitaries
 
 $$
 \begin{align*}

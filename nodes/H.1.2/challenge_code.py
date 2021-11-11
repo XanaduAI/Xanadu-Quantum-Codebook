@@ -11,14 +11,12 @@
 
 challenge_code = '''input = 0 # MODIFY EXAMPLE
 
-prob_dist, trials = [0, 0], 100
-for trial in range(trials):
-    prob_dist[secret_box(input)] += 1/trials
-print("On input bit", input, "the approximate probability distribution is", prob_dist, ".")
+trials = 100 # INCREASE TRIALS TO IMPROVE APPROXIMATION
+print("On input", input, "the approximate probability distribution is")
+# We will secretly apply the function and return the result!
 
 def random_box(bit):
-    """
-        Guess the secret random rule.
+    """Guess the secret random rule.
     
     Args:
         bit (int): A bit representing the initial condition.

@@ -6,4 +6,4 @@ Any closed quantum system evolves by a unitary, but we are going be most interes
 
 ---
 
-***Codercise H.2.2.*** Create a circuit which applies a matrix if it is correctly sized and unitary using ``unitary_check(operator)``, and otherwise does nothing. You will need the [``qml.QubitUnitary``](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.QubitUnitary.html) method from PennyLane.
+***Codercise H.2.2.*** Create a circuit which applies a matrix if it is correctly sized and unitary using ``unitary_check(operator)``, and otherwise does nothing. You will need the [``qml.QubitUnitary``](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.QubitUnitary.html) gate from PennyLane.

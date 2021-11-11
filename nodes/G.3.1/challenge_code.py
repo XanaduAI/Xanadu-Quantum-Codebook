@@ -16,7 +16,7 @@ all_wires = query_register+aux
 dev = qml.device('default.qubit', wires=all_wires)
 
 def oracle(combo):
-    """Implement an oracle using a multicontrolled X gate.
+    """Implement an oracle using a multi-controlled X gate.
     
     Args:
         combo (list): A list of bits representing the secret combination.

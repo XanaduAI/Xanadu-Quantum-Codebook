@@ -7,7 +7,7 @@
 
 ---
 
-When trying to break a combination lock, the best quantum algorithm we came up with in part **A** was to test candidate solutions in pairs, and use our oracle to tell when the solution was present. Interesting, but not particularly impressive! In this section, we'll present a much more powerful algorithm which lets us search through lock combinations more efficiently than any classical algorithm.
+When trying to break a combination lock, the best quantum algorithm we came up with in module **A** was to test candidate solutions in pairs, and use our oracle to tell when the solution was present. Interesting, but not particularly impressive! In this section, we'll present a much more powerful algorithm which lets us search through lock combinations more efficiently than any classical algorithm.
 
 <img src="pics/grover-lock.svg">
 
@@ -16,7 +16,7 @@ To start us off, recall that the test-in-pairs algorithm told us when a solution
 <img src="pics/new-amp-1.svg" width="500px">
 
 The second state is the solution. We want to somehow increase its
-amplitude so we're more likely to observe it when we take a
+amplitude, so we're more likely to observe it when we take a
 measurement. Our first step, as usual, is to apply the oracle, which flips the sign of the amplitude for $\vert \mathbf{s}\rangle$:
 
 <img src="pics/new-amp-2.svg" width="500px">
@@ -27,7 +27,7 @@ Applying the oracle again will only undo the phase flip, so we need to introduce
 
 What can we do with this? Well, suppose we have operator $D$ which
 flips the part which is orthogonal to the uniform state. Since the
-orhogonal part has a small negative overlap with all other states, the effect is
+orthogonal part has a small negative overlap with all other states, the effect is
 to steal a little of the amplitude from all the other states and pump it into the solution state:
 
 <img src="pics/new-amp-4.svg" width="500px">

@@ -10,14 +10,14 @@
 """
 
 challenge_code = '''input = [1, 1, 0] # MODIFY EXAMPLE
-print("The result of applying the secret box to ", input, "is ", secret_box(input), ".")
+print("The result of applying the secret box to ", input, "is ")
+# We will secretly apply the function and return the result!
 
 def deterministic_box(bits):
-    """
-    Guess the secret deterministic rule.
+    """Guess the secret deterministic rule.
     
     Args:
-        bits (list): A list of bits representing an initial condition.
+        bits (list[int]): A list of bits representing an initial condition.
          
     Returns: 
         list[int]: The output bits measured after deterministic evolution.

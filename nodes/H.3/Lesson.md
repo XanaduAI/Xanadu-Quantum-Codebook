@@ -41,7 +41,7 @@ the big field:
 
 <img src="pics/field.svg" width="450px">
 
-Why do little magnets like to align with the big magnets? For the same reason that balls roll downhill, namely, that it *reduces potential energy*. If we imagine the potential energy of the little bar magnet as an undulating energy landscape, valleys are where it aligns with the big magnetic field, and hills where it *anti-aligns*, i.e. points in the opposite direction:
+Why do little magnets like to align with the big magnets? For the same reason that balls roll downhill, namely, that it *reduces potential energy*. If we imagine the potential energy of the little bar magnet as an undulating energy landscape, valleys are where it aligns with the big magnetic field, and hills where it *anti-aligns*, i.e., points in the opposite direction:
 
 <img src="pics/potential.svg" width="420px">
 
@@ -74,7 +74,7 @@ the field, in the negative $z$ direction.
 <img src="pics/Sz-hill.svg" width="420px">
 
 So far, all of this is classical. In quantum mechanics, energy is not
-a number but a *measurement*, e.g., the Pauli $X$, $Y$ and $Z$ gates,
+a number but a *measurement*, e.g., the expectation value of Pauli $X$, $Y$ and $Z$ observables,
 or any other Hermitian operator. The observable which measures energy
 is called the **Hamiltonian** $\hat{H}$, with a hat to distinguish it
 from the Hadamard gate, and it plays a central role in the black boxes
@@ -100,7 +100,7 @@ $$
 \hat{H} = -\frac{e \hbar B}{2m_e} Z = -\alpha \hbar Z, \tag{2} \label{magham-Z}
 $$
 
-where $\alpha - Be/2m_e$. Our physical picture of the electron is
+where $\alpha = Be/2m_e$. Our physical picture of the electron is
 simply related to the measurement outcomes for $Z$:
 
 <img src="pics/align.svg" width="350px">
@@ -112,7 +112,7 @@ B/2m_e:$
 
 <img src="pics/ham-z.svg" width="500px">
 
-Now we have a Hamiltonian, let's return to the problem of how our
+Now that we have a Hamiltonian, let's return to the problem of how our
 electron bar magnet changes with time. We know that, for a time $t$,
 there is some unitary operator $U$ that realizes the time-evolution
 for the state of the electron, $\vert \psi(t)\rangle = U(t)\vert
@@ -217,7 +217,10 @@ $$
 \begin{align*}
 \langle \psi \vert X \vert \psi\rangle & = \left(\cos(\alpha t) \langle +\vert  - i \sin(\alpha t) \langle-\vert \right) X \left(\cos(\alpha t) \vert +\rangle + i \sin(\alpha t) \vert -\rangle\right) \\
 & = \left(\cos(\alpha t) \langle +\vert  - i \sin(\alpha t) \langle -\vert \right) \left(\cos(\alpha t) \vert +\rangle - i \sin(\alpha t) \vert -\rangle\right) \\
-& = \cos^2(\alpha t) \langle +\vert +\rangle - \sin^2(\alpha t) \langle -\vert -\rangle + i \cos(\alpha t)\sin(\alpha t)  (\langle-\vert +\rangle - \langle +\vert -\rangle) \\ & = \cos^2(\alpha t) - \sin^2(\alpha t) = \cos(2\alpha t).
+& = \cos^2(\alpha t) \langle +\vert +\rangle - \sin^2(\alpha t)
+\langle -\vert -\rangle + i \cos(\alpha t)\sin(\alpha t)
+(\langle-\vert +\rangle - \langle +\vert -\rangle) \\ & =
+\cos^2(\alpha t) - \sin^2(\alpha t) \\ & = \cos(2\alpha t).
 \end{align*}
 $$
 

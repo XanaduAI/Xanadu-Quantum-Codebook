@@ -20,5 +20,3 @@ called the **PREPARE subroutine**.
 
 ***Codercise H.6.2.*** (a) Finish the code below to implement the
    SELECT subcircuit.
-
-*Hint.* Use [``qml.ControlledQubitUnitary``](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.ControlledQubitUnitary.html).

@@ -23,7 +23,7 @@ called the **Grover operator**.
 
 ---
 
-***Codercise G.1.2a.*** Define the diffusion operator as a matrix,
+***Codercise G.1.2.*** (a) Define the diffusion operator as a matrix,
    and visualize its effect on the amplitudes in the post-oracle
    state. We'll plot the amplitudes for
    ``combo=[0, 0, 0, 0]``. Note that ``oracle_matrix(combo)`` remains available.
