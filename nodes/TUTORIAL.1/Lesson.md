@@ -1,11 +1,11 @@
-Welcome to the Xanedu Quantum Codebook! This resource will help you learn quantum computing by using
+Welcome to the Xanadu Quantum Codebook! This resource will help you learn quantum computing by using
 Xanadu's quantum software framework PennyLane.
 
 Please read both "panels" on this page before exploring the rest of the
 Codebook. This panel contains traditional textbook content that supports the
 coding exercises in the adjacent left panel.
 
-## What is the Xanedu Quantum Codebook?
+## What is the Xanadu Quantum Codebook?
 
 The Codebook is an experimental, exercise-based introduction to quantum
 computing. Rather than just reading a textbook or tutorial, or executing some
