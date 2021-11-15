@@ -10,7 +10,7 @@ body:
       value: |
         ## Before posting a content correction
         Search existing GitHub issues to make sure the content correction does not already exist:
-        https://github.com/XanaduAI/Xanedu-Quantum-Codebook/issues
+        https://github.com/XanaduAI/Xanadu-Quantum-Codebook/issues
 
         # Issue description
         Description of the error - include node number/section and screenshots if relevant.

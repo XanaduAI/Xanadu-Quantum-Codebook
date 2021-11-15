@@ -9,7 +9,7 @@ body:
       value: |
           ## Before posting a feature request
           Search existing GitHub issues to make sure the feature request does not already exist:
-          https://github.com/XanaduAI/Xanedu-Quantum-Codebook/issues
+          https://github.com/XanaduAI/Xanadu-Quantum-Codebook/issues
 
           # Feature description
           Description of the feature request - include code snippets and screenshots here if relevant.
