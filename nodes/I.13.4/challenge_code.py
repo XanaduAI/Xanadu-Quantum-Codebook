@@ -17,7 +17,7 @@ def four_qubit_mcx():
     # YOUR CODE HERE #
     ##################
 
-    # IMPLEMENT THE CIRCUIT ABOVE USING A 4-QUBIT MULTICONTROLLED X
+    # IMPLEMENT THE CIRCUIT ABOVE USING A 4-QUBIT MULTI-CONTROLLED X
 
     return qml.state()
 

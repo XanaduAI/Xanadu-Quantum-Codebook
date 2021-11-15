@@ -12,7 +12,7 @@
 challenge_code = '''def SELECT(U_list):
     """Implement the SELECT oracle for 2^k unitaries."""
     for index in range(2**k_bits):
-        ctrl_str =  np.binary_repr(index, k_bits) # Create binary representation
+        ctrl_str = np.binary_repr(index, k_bits) # Create binary representation
         qml.ControlledQubitUnitary(U_list[index], control_wires=aux, 
                                    wires=main, control_values=ctrl_str)
 

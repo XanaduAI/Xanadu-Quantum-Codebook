@@ -23,6 +23,6 @@ challenge_code = '''def my_circuit(theta, phi):
     qml.RY(phi, wires=1)
     
     # This is the measurement; we return the probabilities of all possible output states
-    # You'll learn more about what types of measurements are available in a later section
+    # You'll learn more about what types of measurements are available in a later node
     return qml.probs(wires=[0, 1, 2])
 '''

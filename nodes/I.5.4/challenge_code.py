@@ -15,6 +15,9 @@ challenge_code = '''dev = qml.device('default.qubit', wires=3)
 def too_many_ts():
     """You can implement the original circuit here as well, it may help you with
     testing to ensure that the circuits have the same effect.
+
+    Returns:
+        array[float]: The measurement outcome probabilities.
     """
 
     return qml.probs(wires=[0, 1, 2])
@@ -23,6 +26,9 @@ def too_many_ts():
 def just_enough_ts():
     """Implement an equivalent circuit as the above with the minimum number of 
     T and T^\dagger gates required.
+
+    Returns:
+        array[float]: The measurement outcome probabilities.
     """
 
     ##################

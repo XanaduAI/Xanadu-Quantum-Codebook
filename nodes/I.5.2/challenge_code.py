@@ -13,7 +13,11 @@ challenge_code = '''dev = qml.device("default.qubit", wires=1)
 
 @qml.qnode(dev)
 def fake_z():
-    """Use RZ to produce the same action as Pauli Z on the |+> state."""
+    """Use RZ to produce the same action as Pauli Z on the |+> state.
+
+    Returns:
+        array[complex]: The state of the qubit after the operations.
+    """
 
     ##################
     # YOUR CODE HERE #

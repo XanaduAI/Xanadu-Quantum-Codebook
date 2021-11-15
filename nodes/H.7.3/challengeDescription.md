@@ -7,7 +7,7 @@ We imagine that the auxiliary states $\vert j\rangle_A$ are memory
 addresses and the main register stores data $\vert D_j\rangle_D$,
 prepared from some initial state $\vert 0\rangle_D$ by acting with a unitary, $\vert
 D_j\rangle_D = U_j \vert 0\rangle_D$
-(we've added subscripts for clarity.)
+(we've added subscripst for clarity.)
 The quantum computer may wish not only to retrieve individual states
 from their addresses, but to create an arbitrary superposition of data
 states.

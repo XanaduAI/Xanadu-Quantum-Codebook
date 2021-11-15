@@ -11,7 +11,7 @@
 
 challenge_code = '''dev = qml.device("default.qubit", wires=3)
 
-#################
+##################
 # YOUR CODE HERE #
 ##################
 

@@ -14,7 +14,7 @@ dev = qml.device("default.qubit", wires=range(n_bits))
 
 @qml.qnode(dev)
 def two_distant_spins(B, time):
-    """Circuit for evolving state of two distant electrons in a magnetic field.
+    """Circuit for evolving the state of two distant electrons in a magnetic field.
     
     Args:
         B (float): The strength of the field, assumed to point in the z direction.
