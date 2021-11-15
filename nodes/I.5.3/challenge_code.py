@@ -13,7 +13,11 @@ challenge_code = '''dev = qml.device("default.qubit", wires=1)
 
 @qml.qnode(dev)
 def many_rotations():
-    """Implement the circuit depicted above and return the quantum state."""
+    """Implement the circuit depicted above and return the quantum state.
+
+    Returns:
+        array[complex]: The state of the qubit after the operations.
+    """
 
     ##################
     # YOUR CODE HERE #

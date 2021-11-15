@@ -51,7 +51,7 @@ def variance_scaling(n_shots):
         
     Returns:
         float: The variance in expectation value we expect to see when we run
-        an experient with n_shots shots.
+        an experiment with n_shots shots.
     """
 
     estimated_variance = 0

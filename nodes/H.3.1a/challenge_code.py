@@ -10,7 +10,8 @@
 """
 
 challenge_code = '''def mag_z_unitary(B, time):
-    """Creates unitary operator to evolve state of electron in magnetic field.
+    """Creates a unitary operator to evolve the state of an electron in 
+    a magnetic field.
     
     Args:
         B (float): The strength of the field, assumed to point in the z direction.

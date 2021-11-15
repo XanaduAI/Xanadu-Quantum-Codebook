@@ -25,5 +25,5 @@ def oracle(combo):
     ##################
     # YOUR CODE HERE #
     ##################
-    pass # APPLY MULTICONTROLLED X
+    pass # APPLY MULTI-CONTROLLED X
 '''

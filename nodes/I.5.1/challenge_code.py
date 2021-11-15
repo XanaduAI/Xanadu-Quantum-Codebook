@@ -15,6 +15,9 @@ challenge_code = '''dev = qml.device("default.qubit", wires=1)
 def apply_z_to_plus():
     """Write a circuit that applies PauliZ to the |+> state and returns
     the state.
+
+    Returns:
+        array[complex]: The state of the qubit after the operations.
     """
 
     ##################
