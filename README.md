@@ -1,6 +1,6 @@
-# Xanedu Quantum Codebook
+# Xanadu Quantum Codebook
 
-The Xanedu Quantum Codebook is an experimental, exercise-based introduction to
+The Xanadu Quantum Codebook is an experimental, exercise-based introduction to
 quantum computing using [PennyLane](https://pennylane.ai). This repository
 contains all the source text and coding challenge templates in the Codebook;
 the Codebook itself is available at [codebook.xanadu.ai](https://codebook.xanadu.ai).
@@ -10,7 +10,7 @@ the Codebook itself is available at [codebook.xanadu.ai](https://codebook.xanadu
 The Codebook is currently in the **beta** stage of development. If you find an
 **error** in the Codebook, **something is not working as expected**, or have
 other **technical feedback**, please [open an
-issue](https://github.com/XanaduAI/Xanedu-Quantum-Codebook/issues/new/choose) in
+issue](https://github.com/XanaduAI/Xanadu-Quantum-Codebook/issues/new/choose) in
 this repository.
 
 If you are **stuck on a coding exercise**, or have **questions about the content
@@ -19,7 +19,7 @@ forum](https://discuss.pennylane.ai) under the "Codebook" category.
 
 ## Codebook team
 
-The Xanedu Quantum Codebook was **written**, *developed*, and reviewed by
+The Xanadu Quantum Codebook was **written**, *developed*, and reviewed by
 members of the Xanadu team. The current contents are the work of the following
 people:
 
@@ -36,4 +36,4 @@ following format:
 > C. Albornoz, G. Alonso, M. Andrenkov, P. Angara, A. Asadi, A. Ballon,
   S. Bapat, O. Di Matteo, P. Finlay, A. Fumagalli, A. Gardhouse, N. Girard,
   A. Hayes, J. Izaac, T. Kalajdzievski, N. Killoran, J. Soni, D. Wakeham. (2021)
-  *Xanedu Quantum Codebook*. DOI:XXX.
+  *Xanadu Quantum Codebook*.
