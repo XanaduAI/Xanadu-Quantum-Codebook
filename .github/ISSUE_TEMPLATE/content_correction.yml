@@ -1,6 +1,6 @@
 name: Content correction
 description: Flag content-related errors
-title: '[EDIT]'
+title: "[EDIT] "
 labels: "edit :memo:"
 
 body:
