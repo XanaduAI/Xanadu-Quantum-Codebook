@@ -1,4 +1,4 @@
-# Xanadu Quantum Codebook
+# Xanadu Quantum Codebook Test
 
 The Xanadu Quantum Codebook is an experimental, exercise-based introduction to
 quantum computing using [PennyLane](https://pennylane.ai). This repository
