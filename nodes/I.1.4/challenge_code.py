@@ -25,6 +25,6 @@ def apply_u(state):
     # YOUR CODE HERE #
     ##################
 
-    # APPLY U TO THE INPUT STATE RETURN AND THE NEW STATE
+    # APPLY U TO THE INPUT STATE AND RETURN THE NEW STATE
     pass
 '''
