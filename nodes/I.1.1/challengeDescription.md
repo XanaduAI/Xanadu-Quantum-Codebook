@@ -81,7 +81,7 @@ $$
 
   $$
   \begin{equation}
-      \vert \psi \rangle =  (0.87287156+0.43643578i) \vert 0 \rangle + (-0.13093073+0.17457431j) \vert 1 \rangle.
+      \vert \psi \rangle =  (0.87287156+0.43643578i) \vert 0 \rangle + (-0.13093073+0.17457431i) \vert 1 \rangle.
   \end{equation}
   $$
 

@@ -185,7 +185,7 @@ $$
 \begin{align*}
  RX(\theta) \vert 1\rangle  &=  \begin{pmatrix} \cos \left(\frac{\theta}{2} \right) & -i \sin \left(\frac{\theta}{2} \right) \\ -i\sin \left(\frac{\theta}{2} \right)& \cos \left(\frac{\theta}{2} \right)  \end{pmatrix} \begin{pmatrix} 0 \\ 1 \end{pmatrix} \\
  &= \begin{pmatrix}  -i \sin \left( \frac{\theta}{2} \right) \\ \cos \left( \frac{\theta}{2} \right) \end{pmatrix} \\
- &= -i \sin \left( \frac{\theta}{2} \right)  \vert 0 \rangle  \cos \left( \frac{\theta}{2} \right) \vert 1 \rangle.
+ &= -i \sin \left( \frac{\theta}{2} \right)  \vert 0 \rangle + \cos \left( \frac{\theta}{2} \right) \vert 1 \rangle.
 \end{align*}
 $$
 

@@ -14,8 +14,17 @@ The idea of a controlled-controlled-NOT generalizes to
 ***Codercise I.13.4.*** In PennyLane, mixed-polarity multi-controlled Toffoli
 gates can be easily implemented using the
 [`MultiControlledX`](https://pennylane.readthedocs.io/en/latest/code/api/pennylane.MultiControlledX.html)
-operation. With this gate, a string of control bits, `control_values`, can be
-specified as an input argument. Write a 4-qubit PennyLane circuit that applies a
+operation. With this gate, control wires, and a string of control bits, `control_values`, are 
+specified as input arguments, like the example below:
+
+<code>
+
+    qml.MultiControlledX(control_wires=[0, 1, 2, 3], wires=4, control_values="1011")
+    
+</code>
+
+
+Write a 4-qubit PennyLane circuit that applies a
 Hadamard to the control qubits, then applies a `MultiControlledX` on the fourth
 qubit, controlled on the first 3 qubits being in the state $\vert
 001\rangle$. This is depicted in the circuit below: "control on 0" is denoted by

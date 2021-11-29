@@ -26,9 +26,10 @@ people:
 Catalina Albornoz, Guillermo Alonso, Mikhail Andrenkov, Priya Angara\*, Ali
 Asadi, Álvaro Ballon, *Sanchit Bapat*, **Olivia Di Matteo**, *Paul Finlay*,
 *Alberto Fumagalli*, *Andrew Gardhouse*, Natalie Girard, Ant Hayes, Josh Izaac,
-Timjan Kalajdzievski, Nathan Killoran, Jay Soni, **David Wakeham**\*.
+*Rafal Janik*, Timjan Kalajdzievski, Nathan Killoran, Jay Soni, **David Wakeham**\*\*.
 
-(\* *Funding support for our student authors was provided by the Mitacs Accelerate program.*)
+(*Funding support for our student authors was provided by the \*Quantum Algorithms 
+Institute and the \*\*Mitacs Accelerate program.*)
 
 If you would like to acknowledge the Codebook in your work, please use the
 following format:
