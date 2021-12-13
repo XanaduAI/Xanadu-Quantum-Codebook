@@ -2,4 +2,3 @@
 
 Hitting the submit button will plot the normalized coefficient of $\vert 0\rangle$ for the main register qubit. The first-order results are red, second-order blue and full series is green. Do the results make sense?
 
-<img src="pics/evolution_h63c.png">

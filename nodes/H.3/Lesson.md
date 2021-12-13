@@ -244,7 +244,7 @@ $$
 Show that $\vert \psi(t)\rangle = U(t)\vert \psi(0)\rangle$ has expectations
 
 $$
-(\langle X\rangle_t, \langle Y\rangle_t,\langle Z\rangle_t) = (\cos(2\alpha t) x - \sin(2\alpha t) y, \sin(2\alpha t) x + \cos(2\alpha t) y, z),
+(\langle X\rangle_t, \langle Y\rangle_t,\langle Z\rangle_t) = (\cos(2\alpha t) x + \sin(2\alpha t) y, -\sin(2\alpha t) x + \cos(2\alpha t) y, z),
 $$
 
 where for an operator $\mathcal{O}$, $\langle\mathcal{O}\rangle_t =
@@ -278,7 +278,7 @@ $$
 From the algebra of Pauli matrices, $ZX = -XZ = iY$ and $ZXZ = iYZ = -X$, and hence
 
 $$
-\langle X\rangle_t = \big(\cos^2(\alpha t) - \sin^2(\alpha t)\big)\langle X_0\rangle - 2\cos(\alpha t)\sin(\alpha t) \langle Y \rangle_0 = \cos(2\alpha t) x - \sin(2\alpha t) y.
+\langle X\rangle_t = \big(\cos^2(\alpha t) - \sin^2(\alpha t)\big)\langle X_0\rangle + 2\cos(\alpha t)\sin(\alpha t) \langle Y \rangle_0 = \cos(2\alpha t) x + \sin(2\alpha t) y.
 $$
 
 This is what we wanted! The other components are similar. ▢

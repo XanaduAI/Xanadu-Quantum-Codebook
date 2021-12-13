@@ -159,7 +159,7 @@ Assuming the condition $\langle \psi_0\vert U^\dagger U\vert \psi_0\rangle = 1$,
 (a) Show that $\langle \psi_0\vert U^\dagger U\vert \psi_0\rangle = 1$ implies
 
 $$
-\Re[\alpha^*\beta \langle\mathbf{x}\vert U^\dagger U\vert \mathbf{x}\rangle] = 0,
+\Re[\alpha^*\beta \langle\mathbf{x}\vert U^\dagger U\vert \mathbf{x}'\rangle] = 0,
 $$
 
 where $\Re$ denotes the real component of a complex number.

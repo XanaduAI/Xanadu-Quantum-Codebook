@@ -17,4 +17,3 @@ In the multi-solution cases, we've just empirically demonstrated that
 the running time is $O(\sqrt{N/M})$.
 We really can break locks with our quantum computer now!
 
-<img src="pics/grover_end_graphic_g54.png">

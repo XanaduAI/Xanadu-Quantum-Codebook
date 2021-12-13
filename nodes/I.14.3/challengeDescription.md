@@ -22,5 +22,3 @@ implement a controlled-controlled-$Y$ by applying $S^\dagger$ and $S$ before and
 after a Toffoli respectively. Our final circuit is thus
 
 <img src="pics/challenge-exercise-unrolled.svg" width="650px">
-
-<img src="pics/challenge-exercise-alt.png">

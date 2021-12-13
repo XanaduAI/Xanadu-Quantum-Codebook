@@ -52,5 +52,5 @@ yet.
 The controlled identity is simply the identity, which can be
  omitted from the circuit. Since $V_t$ is a real matrix, you can take
  its adjoint using
-<a href="https://numpy.org/doc/stable/reference/generated/numpy.transpose.html" target="_blank"><tt>np.tranpose</tt></a> .
+<a href="https://numpy.org/doc/stable/reference/generated/numpy.transpose.html" target="_blank"><tt>np.transpose</tt></a> .
 </details>

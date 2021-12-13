@@ -1,7 +1,7 @@
 ---
 
 We'll define the PREPARE oracle as the Householder transformation
-associated with the state
+of the state
 
 $$
 \vert 0 - \alpha\rangle  =\frac{\vert 0\rangle - \vert

@@ -76,7 +76,7 @@ Acting on $\vert u\rangle$ and $\vert v\rangle$ with unitaries, we
 find the inner product is unchanged,
 
 $$
-(U \vert u\rangle)^\dagger \vert v\rangle = \langle u\vert U^\dagger U
+(U \vert u\rangle)^\dagger \vert U v\rangle = \langle u\vert U^\dagger U
 \vert v\rangle = \langle u \vert v\rangle,
 $$
 

@@ -30,4 +30,3 @@ limitations. These will be fixed in future versions of the website.
    different solution, unless you clear your cache (but this will cause you
    to lose your progress).
 
-<img src="pics/circuit_tutorial_t3.png">
