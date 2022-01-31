@@ -85,7 +85,7 @@ gates you've learned about so far, both single- and multi-qubit.
   <td style="text-align:center"> $CU$ </td>
   <td style="text-align:center"> $\begin{pmatrix} I_2 & 0 \\ 0 & U \\ \end{pmatrix}$ </td>
   <td style="text-align:center"> <img src="pics/cu.svg" width="100px"> </td>
-  <td style="text-align:center"> $$\begin{align*} CU\vert 00 \rangle &= \vert 00 \rangle \\ CU\vert 01 \rangle &= \vert 01 \rangle \\ CZ\vert 10 \rangle &= \vert 1 \rangle \otimes U\vert 0 \rangle \\ CZ\vert 11 \rangle &= \vert 1 \rangle \otimes U \vert 1 \rangle \end{align*}$$ </td>    
+  <td style="text-align:center"> $$\begin{align*} CU\vert 00 \rangle &= \vert 00 \rangle \\ CU\vert 01 \rangle &= \vert 01 \rangle \\ CU\vert 10 \rangle &= \vert 1 \rangle \otimes U\vert 0 \rangle \\ CU\vert 11 \rangle &= \vert 1 \rangle \otimes U \vert 1 \rangle \end{align*}$$ </td>    
  </tr>
  <tr>
   <td style="text-align:center"> $SWAP$  </td>
@@ -96,7 +96,7 @@ gates you've learned about so far, both single- and multi-qubit.
     0 & 0 & 0 & 1
     \end{pmatrix}$ </td>
   <td style="text-align:center"> <img src="pics/swap.svg" width="100px"> </td>
-   <td style="text-align:center"> $$\begin{align*} SWAP\vert 00 \rangle &= \vert 00 \rangle \\ SWAP\vert 01 \rangle &= \vert 10 \rangle \\ SWAP\vert 10 \rangle &= \vert 01 \rangle \\ SWAP\vert 11 \rangle &= \vert 10 \rangle \end{align*}$$ </td> 
+   <td style="text-align:center"> $$\begin{align*} SWAP\vert 00 \rangle &= \vert 00 \rangle \\ SWAP\vert 01 \rangle &= \vert 10 \rangle \\ SWAP\vert 10 \rangle &= \vert 01 \rangle \\ SWAP\vert 11 \rangle &= \vert 11 \rangle \end{align*}$$ </td> 
  </tr>
  <tr>
   <td style="text-align:center"> $TOF$  </td>

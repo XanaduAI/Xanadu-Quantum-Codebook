@@ -145,7 +145,7 @@ $$
 The analytical expectation value is 
  $$ 
  \begin{equation}
-  \langle \psi \vert B \vert \psi \rangle = \frac{1}{25} \begin{pmatrix} 4 & -3 e^{-i\pi/3} \end{pmatrix} \begin{pmatrix} 1 & -2i \\ 2i & 2 \end{pmatrix} \begin{pmatrix} 4 \\ -3 e^{i\pi/3} \end{pmatrix} = 3.022769.
+  \langle \psi \vert B \vert \psi \rangle = \frac{1}{25} \begin{pmatrix} 4 & -3 e^{-i\pi/3} \end{pmatrix} \begin{pmatrix} 1 & -2i \\ 2i & 2 \end{pmatrix} \begin{pmatrix} 4 \\ -3 e^{i\pi/3} \end{pmatrix} = -0.302769.
  \end{equation}
  $$
 
@@ -153,14 +153,14 @@ The analytical expectation value is
 
 </details>
 
-(d) Suppose we prepared this state and measured $B$ 1000 times. 816 of the trials yielded the larger of the two possible measurement outcomes, and the remaining tries yielded the smaller one. What is the experimentally-obtained expectation value of $B$?  
+(d) Suppose we prepared this state and measured $B$ 1000 times. 54 of the trials yielded the larger of the two possible measurement outcomes, and the remaining tries yielded the smaller one. What is the experimentally-obtained expectation value of $B$?  
 
 
 <details>
   <summary><i>Solution.</i></summary>
  To compute the experimentally obtained eigenvalue, we take the weighted average:
  $$
- \langle \tilde{B} \rangle = \frac{816 \cdot 3.56155281 + 184 \cdot (-0.56155281)}{1000} = 2.802901.
+ \langle \tilde{B} \rangle = \frac{54 \cdot 3.56155281 + 946 \cdot (-0.56155281)}{1000} = -0.338905.
  $$
  The experimentally-obtained value does not exactly match the analytically-obtained one in this case, but will do so in the limit of an infinite number of trials. ▢
 
