@@ -24,7 +24,7 @@ def diffusion_matrix():
 
 @qml.qnode(dev)
 def difforacle_amp(combo):
-    """Apply the oracle and diffusion matrix to the uniform superposition.
+    """Prepare the uniform superposition and apply the oracle and diffusion matrix.
 
     Args:
         combo (list[int]): A list of bits representing the secret combination.
