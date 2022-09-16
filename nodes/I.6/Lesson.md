@@ -307,7 +307,7 @@ to $X$:
 
 $$
 \begin{align*}
-&= \left(1 - \frac{1}{2}\left(\frac{\theta}{2}\right)^2 + \frac{1}{4} \left(\frac{\theta}{2}\right)^4 \right)I - i\left(\left(\frac{\theta}{2}\right) - \frac{1}{3!}\left(\frac{\theta}{2}\right)^3 + \cdots \right) X .
+&= \left(1 - \frac{1}{2}\left(\frac{\theta}{2}\right)^2 + \frac{1}{4!} \left(\frac{\theta}{2}\right)^4 - \cdots  \right)I - i\left(\left(\frac{\theta}{2}\right) - \frac{1}{3!}\left(\frac{\theta}{2}\right)^3 + \cdots \right) X .
 \end{align*}
 $$
 
