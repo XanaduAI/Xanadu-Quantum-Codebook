@@ -1,0 +1,20 @@
+name: 'Close all PRs'
+
+on:
+  pull_request_target:
+    types: opened
+
+permissions:
+  pull-requests: write
+
+jobs:
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dessant/repo-lockdown@v2
+        with:
+          close-issue: false
+          lock-issue: false
+          pr-comment: 'Thanks for your contribution!  Unfortunately, we don't use GitHub pull requests to manage code contributions to this repository as this is just a mirror. If you've spotted a typo, or have a content correction or suggestion for a new feature, please [open a new Issue.](https://github.com/XanaduAI/Xanadu-Quantum-Codebook/issues/new/choose)'
+          skip-closed-pr-comment: false
+          close-pr: true
