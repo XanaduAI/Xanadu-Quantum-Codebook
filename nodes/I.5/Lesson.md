@@ -74,9 +74,11 @@ $$
    arbitrary state $\vert \psi \rangle = \alpha \vert 0\rangle + \beta \vert
    1\rangle$. Explain why this is equivalent to the matrix representation
 
+$$
 \begin{equation}
  RZ^\prime(\omega) = \begin{pmatrix} 1 & 0 \\ 0 & e^{i \omega} \end{pmatrix}.
 \end{equation}
+$$
 
 
 <details>
