@@ -264,10 +264,12 @@ superposition, rather we observe the qubit either in state $\vert 0\rangle$ or
 state $\vert 1\rangle$. The amplitudes $\alpha$ and $\beta$ contain the
 information about the probability of each of those outcomes:
 
+$$
 \begin{eqnarray}
  \hbox{Prob(measure and observe } \vert 0\rangle) &=& \vert \alpha\vert ^2, \\
  \hbox{Prob(measure and observe } \vert 1\rangle) &=& \vert \beta\vert ^2. \\ \tag{12}
 \end{eqnarray}
+$$
 
 This notation, $\vert \cdot\vert ^2$ is called the "mod squared", and is simply
 multiplication of a number by its complex conjugate, i.e., $\vert \alpha\vert ^2
@@ -292,9 +294,11 @@ outcome probabilities, and thus $\alpha$ and $\beta$.
 
 ***Exercise I.1.3.*** Suppose you have a qubit in the state
 
+$$
 \begin{equation}
  \vert \psi \rangle = \frac{1}{2} \vert 0\rangle - \frac{\sqrt{3}i}{2} \vert 1\rangle.
 \end{equation}
+$$
 
 Is this state normalized? If so, what is the probability of observing the qubit
 in state $\vert 1\rangle$ after measuring it?
@@ -302,16 +306,19 @@ in state $\vert 1\rangle$ after measuring it?
 <details>
   <summary><i>Solution.</i></summary>
   Yes, the state is normalized because:
+$$
  \begin{equation}
     \bigg|\frac{1}{2}\bigg|^2 + \bigg|\frac{\sqrt{3}i}{2}\bigg|^2 = 1
 \end{equation}
-  
+$$  
   The probability of observing it in $\vert 1 \rangle$ is 
 
+$$
 \begin{equation}
 -\frac{\sqrt{3}i}{2} \times \frac{\sqrt{3}i}{2} = \frac{3}{4}.
 \end{equation}
-
+$$
+ 
 <div align="right"> ▢ </div>
 
 </details>
@@ -325,16 +332,20 @@ need the final ingredient that happens in between: the manipulation of qubit
 states. Qubit states are vectors, so we need a mathematical means of modifying a
 vector $\vert \psi\rangle$ to produce another vector $\vert \psi^\prime\rangle$:
 
+$$
 \begin{equation}
  \vert \psi\rangle = \alpha \vert 0\rangle + \beta \vert 1\rangle \rightarrow \vert \psi^\prime\rangle = \alpha^\prime \vert 0\rangle + \beta^\prime \vert 1\rangle. \tag{13}
 \end{equation}
+$$
 
 What sends a 2-dimensional vector to another 2-dimensional vector?
 Multiplication by a $2 \times 2$ matrix, $U$:
 
+$$
 \begin{equation}
 \vert \psi^\prime \rangle = U \vert \psi\rangle. \tag{14}
 \end{equation}
+$$
 
 But not just any matrix will do. The matrix must preserve the normalization of
 the state. Even after an operation, the measurement outcome probabilities must
@@ -350,15 +361,19 @@ many common unitary operations.
 
 ***Exercise I.1.4.*** Suppose we have a qubit in state 
 
+$$
 \begin{equation}
  \vert \psi \rangle = \frac{1}{2} \vert 0\rangle - \frac{\sqrt{3}i}{2} \vert 1\rangle,
 \end{equation}
+$$
 
 and we want to apply the operation 
 
+$$
 \begin{equation}
  U = \begin{pmatrix} 0 & i \\ -i & 0 \end{pmatrix}.
 \end{equation}
+$$
 
 Compute the state of the qubit after applying $U$. Then, compute the measurement
 outcome probabilities of 0 and 1, and verify that the state is normalized
