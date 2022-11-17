@@ -24,7 +24,7 @@ members of the Xanadu team. The current contents are the work of the following
 people:
 
 Catalina Albornoz, Guillermo Alonso, Mikhail Andrenkov, Priya Angara\*, Ali
-Asadi, Álvaro Ballon, *Sanchit Bapat*, **Olivia Di Matteo**, *Paul Finlay*,
+Asadi, Álvaro Ballon, *Sanchit Bapat*, Isaac De Vlugt, **Olivia Di Matteo**, *Paul Finlay*,
 *Alberto Fumagalli*, *Andrew Gardhouse*, Natalie Girard, Ant Hayes, Josh Izaac,
 *Rafal Janik*, Timjan Kalajdzievski, Nathan Killoran, Jay Soni, **David Wakeham**\*\*.
 
@@ -35,6 +35,6 @@ If you would like to acknowledge the Codebook in your work, please use the
 following format:
 
 > C. Albornoz, G. Alonso, M. Andrenkov, P. Angara, A. Asadi, A. Ballon,
-  S. Bapat, O. Di Matteo, P. Finlay, A. Fumagalli, A. Gardhouse, N. Girard,
+  S. Bapat, I. De Vlugt, O. Di Matteo, P. Finlay, A. Fumagalli, A. Gardhouse, N. Girard,
   A. Hayes, J. Izaac, T. Kalajdzievski, N. Killoran, J. Soni, D. Wakeham. (2021)
   *Xanadu Quantum Codebook*.
