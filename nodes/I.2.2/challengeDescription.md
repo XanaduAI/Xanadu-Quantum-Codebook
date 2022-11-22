@@ -29,7 +29,7 @@ device.
 
 </code>
 
-Once we have a device, we can construct a [`QNode`](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.QNode.html). QNodes are the main unit of
+Once we have a device, we can construct a [`QNode`](https://docs.pennylane.ai/en/stable/code/api/pennylane.QNode.html). QNodes are the main unit of
 quantum computation in PennyLane. 
 
 <img src="pics/qnode.svg" alt="" width="600px">

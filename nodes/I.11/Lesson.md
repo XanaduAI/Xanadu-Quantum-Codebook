@@ -67,9 +67,9 @@ single 1! This makes it clear that we have a basis, because we can create any $4
 \times 1$ complex-valued vector by taking a linear combination of these basis
 states. The second point relates to where exactly the 1 sits in the vector. This
 is related to the binary expression of the product of basis states. For example,
-$\vert 0\rangle \otimes \vert 0\rangle$ has a 1 in the zero'th entry, which
-corresponds to `00` in binary. The vector $\vert 1\rangle \otimes \vert
-0\rangle$ has a 1 in the second entry (indexing from 0) - `10` is 2 in
+$\vert 0\rangle \otimes \vert 0\rangle$ has a 1 in the zero-th entry, which
+corresponds to `00` in the binary representation. The vector $\vert 1\rangle \otimes \vert
+0\rangle$ has a 1 in the second entry (indexing from 0) — `10` is 2 in
 binary. Thus, to construct an arbitrary basis vector, instead of taking a tensor
 product, you can just create a vector with a 1 at the element that corresponds
 to that basis state's binary representation! ▢
@@ -110,7 +110,7 @@ to that basis state's binary representation! ▢
 ***Exercise I.11.3.*** Use the tensor product to compute the state vector of a
    two-qubit system where the first qubit is in state $\vert +\rangle$, and the
    second is in state $\vert 1\rangle$. Express that state as a linear
-   combination of the two-qubit computational basis vectors, and verify that
+   combination of the two-qubit computational basis vectors and verify that
    this state is still normalized.
 
 *Tip*. There are two approaches to working this problem. One is to express the
@@ -181,7 +181,7 @@ $(S \otimes T \otimes T^\dagger)(H \otimes H \otimes H)\vert \psi \rangle$.
 ***Exercise I.11.4.*** Suppose we have two tensor product operations, $A \otimes
    B$, and $C \otimes D$. A cool fact is that if we multiply these two together,
    the multiplication works on each side of the tensor product independently,
-   i.e., $(A \otimes B) \cdot (C \otimes D) = (AC) \otimes (BD)$. If you like,
+   i.e., $(A \otimes B) \cdot (C \otimes D) = (AC) \otimes (BD)$. If you'd like,
    you can take a crack at proving this mathematically. However, there is a more
    intuitive way of understanding this: using a circuit diagram and your
    knowledge of how single- and two-qubit operations work, reason why this
@@ -189,8 +189,7 @@ $(S \otimes T \otimes T^\dagger)(H \otimes H \otimes H)\vert \psi \rangle$.
 
 <details>
   <summary><i>Hint.</i></summary>
-Start by drawing the quantum circuit that applies $A \otimes B$ followed by $C \otimes D$,
-then look at the operations acting on the individual qubits.
+Start by drawing the quantum circuit that applies $C \otimes D$, followed by $A \otimes B$, then look at the operations acting on the individual qubits.
 </details>
 
 <details>

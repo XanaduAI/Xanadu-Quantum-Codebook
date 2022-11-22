@@ -19,7 +19,7 @@ $$
 $$
 
 We can enter a Hamiltonian using the
-<a href="https://pennylane.readthedocs.io/en/stable/code/api/pennylane.Hamiltonian.html" target="_blank"><tt>qml.Hamiltonian</tt></a> method, which builds $\hat{H}$ by pairing a list of terms (assumed to
+<a href="https://docs.pennylane.ai/en/stable/code/api/pennylane.Hamiltonian.html" target="_blank"><tt>qml.Hamiltonian</tt></a> method, which builds $\hat{H}$ by pairing a list of terms (assumed to
 be products of Pauli operators on different qubits) and coefficients
 for those terms.
 In fact, this method effectively outputs $\hat{H}/\hbar$ rather than $\hat{H}$.

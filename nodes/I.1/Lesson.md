@@ -10,7 +10,7 @@
 ---
 
 Quantum computers are an emerging technology with amazing potential to solve
-problems that are intractable even on today's biggest supercomputers. Regular
+problems that are intractable even on today's biggest supercomputers. Conventional
 computers, which we will refer to as **classical computers**, represent
 information as *bits*. A bit is a binary value. It can be either 0 or 1, and
 this is associated to something physical being in two different states. For
@@ -51,10 +51,10 @@ $$
 
 This is tedious to write, though, so in quantum computing (and more generally,
 in quantum mechanics) we use a type of shorthand notation called **Dirac
-notation**, or **bra-ket notation**. The state vector of a qubit is called a
+notation**, or **bra–ket notation**. The state vector of a qubit is called a
 **ket**, the notation for which is $\vert \cdot \rangle$. What goes in between
 the $\vert$ and $\rangle$ is a label to denote particular state. The two states
-above, in bra-ket notation, are expressed like so:
+above, in bra–ket notation, are expressed like so:
 
 $$
 \begin{equation}
@@ -65,7 +65,7 @@ $$
 Quite often, we will see the notation $\vert \psi \rangle$, which represents a
 qubit in some arbitrary state labelled by $\psi$.
 
-Bra-ket notation gets its name for a reason: for every ket, there is an associated
+Bra–ket notation gets its name for a reason: for every ket, there is an associated
 **bra**. A bra is like a ket turned on its side. It is a row vector, where each
 element in the vector is the complex conjugate of the corresponding element in the ket.
 (More formally, a bra is the conjugate transpose of a ket.) The notation for bras
@@ -88,7 +88,7 @@ for qubit states (with a bit of a twist).
 
 The inner product between two qubit states is computed by taking the dot
 product between the bra of one, and the ket of the other (they
-combine to form a "bra-ket" expression). We can do so to check that 
+combine to form a "bra–ket" expression). We can do so to check that 
 $\vert 0 \rangle$ and $\vert 1 \rangle$ are orthogonal:
 
 $$
@@ -103,7 +103,7 @@ $$
 Notice how we simplify the notation when combining a bra and a ket by
 eliminating one of the vertical lines. Thus, $\vert 0 \rangle$ and $\vert 1 \rangle$
 are orthogonal, and form a basis. This is a special basis called the **computational
-basis**, and it is the most commonly-used basis in which to express quantum states.
+basis**, and it is the most commonly used basis in which to express quantum states.
 
 Another feature of the computational basis is that its states are **normalized**
 to have length 1. You can compute the length of a qubit state vector just like
@@ -187,7 +187,7 @@ $$
 $$
 
 
-Alternatively, you can work purely in bra-ket notation. The inner product is
+Alternatively, you can work purely in bra–ket notation. The inner product is
 **linear**, and we can compute the inner product by expanding out the expression,
 much like we would a polynomial in algebra:
 

@@ -20,7 +20,7 @@ multi-qubit state to be entangled.
 
 ---
 
-***Exercise I.12.1.*** (a)
+***Exercise I.12.1.*** *(a)*
 
 Suppose we have two single-qubit states
 
@@ -53,7 +53,7 @@ $$
 
 </details>
 
-(b) Consider the state
+*(b)* Consider the state
 
 $$
 \vert \psi\rangle = \frac{1}{\sqrt{2}} \left( \vert 00\rangle + \vert 11\rangle \right).
@@ -195,7 +195,7 @@ second bit modulo 2: $CNOT\vert ab\rangle = \vert a(b\oplus a)\rangle$. ▢
    roles. Given a state $\vert ab\rangle$, the state $\vert b\rangle$ determines
    whether an $X$ is applied to the state $\vert a \rangle$. Determine the action of this
    operation on the computational basis states; use this to recover the matrix
-   representation of a $CNOT$, $CNOT_{ba}$, acting on the qubits "backwards".
+   representation of the $CNOT$ gate $CNOT_{ba}$, acting on the qubits "backwards".
 
 
 <details>
@@ -249,7 +249,7 @@ about for multi-qubit operations? It turns out that we just need one more gate:
 the $CNOT$. The sets $\{CNOT, H, T\}$, $\{CNOT, RY, RZ\}$ are both universal gate
 sets for multi-qubit computation. Isn't that amazing?
 
-While we could do everything with just the $CNOT$, it is just one of many possible
+While we could do everything with just the $CNOT$ gate, it is just one of many possible
 controlled operations. Any operation, on any number of qubits, can be
 implemented as a controlled operation, controlled on the state of one or more
 other qubits. For example, an arbitrary controlled unitary on two qubits is
@@ -326,7 +326,7 @@ which would produce a $16\times 16$ matrix.
 Now suppose we want to apply the controlled-$U$ from qubit 1 to 3. How can we
 take the tensor product of something like this? We can't just put in the
 matrix because there's a qubit in the middle! The trick lies in noting the block
-structure of the matrix, and re-writing it like so:
+structure of the matrix, and re-writing it like so, for a system of two qubits:
 
 $$
 \begin{pmatrix}
@@ -354,5 +354,5 @@ $$
 $$
 
 This trick works for any controlled operation on any pair of qubits, including
-in "reverse" order - simply exchange the order of the terms in the sum of tensor
+in "reverse" order — simply exchange the order of the terms in the sum of tensor
 products.

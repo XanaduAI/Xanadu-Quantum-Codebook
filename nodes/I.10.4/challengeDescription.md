@@ -12,7 +12,7 @@ can gain some intuition for this by completing the exercise below.
    variance scale with the number of shots?
 
    To accomplish this, we will use a very simple circuit that consists of a
-   Hadamard and a measurement of the `qml.PauliZ` observable, which will allow
+   Hadamard gate and a measurement of the `qml.PauliZ` observable, which will allow
    us to directly extract the dependence of the variance on the number of
    shots. We will plot your results; based on the plot, complete the
    `variance_scaling` function below to define the relationship between variance

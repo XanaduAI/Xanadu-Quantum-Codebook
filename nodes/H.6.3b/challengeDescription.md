@@ -10,4 +10,4 @@ Now ``aux = [0, 1]`` and ``main = 2``. The trick here is to create a circuit cor
 
 In other words, we have a *controlled subcircuit* realizing this second term.
 
-*Tip.* You can create controlled subcircuits using [``qml.ctrl``](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.ctrl.html). Unfortunately, we can't specify the control string, so we need to put an $X$ on either side of the control node.
+*Tip.* You can create controlled subcircuits using [``qml.ctrl``](https://docs.pennylane.ai/en/stable/code/api/pennylane.ctrl.html). Unfortunately, we can't specify the control string, so we need to put an $X$ on either side of the control node.

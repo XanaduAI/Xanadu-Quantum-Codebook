@@ -14,7 +14,7 @@ notation for the conjugate transpose of $U$ (i.e., take the transpose of the
 matrix, and replace each entry with its complex conjugate).
 
 In PennyLane, unitary operations specified by a matrix can be implemented in a
-quantum circuit using the <a href="https://pennylane.readthedocs.io/en/stable/code/api/pennylane.QubitUnitary.html" target="_blank"><tt>QubitUnitary</tt></a> operation. `QubitUnitary` is a parametrized
+quantum circuit using the <a href="https://docs.pennylane.ai/en/stable/code/api/pennylane.QubitUnitary.html" target="_blank"><tt>QubitUnitary</tt></a> operation. `QubitUnitary` is a parametrized
 gate, and can be called like so:
 
 <code>
@@ -27,5 +27,5 @@ gate, and can be called like so:
 
 ***Codercise I.3.1.*** Complete the quantum function below to create a circuit
    that applies `U` to the qubit and returns its *state*. (Compare this to the
-   earlier function `apply_u` that you wrote - isn't it nice to not have to
+   earlier function `apply_u` that you wrote — isn't it nice to not have to
    worry about the matrix arithmetic?)

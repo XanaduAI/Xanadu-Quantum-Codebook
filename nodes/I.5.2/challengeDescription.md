@@ -35,7 +35,7 @@ $$
 
  In PennyLane,
 this operation is accessible as <a
-href="https://pennylane.readthedocs.io/en/stable/code/api/pennylane.RZ.html"
+href="https://docs.pennylane.ai/en/stable/code/api/pennylane.RZ.html"
 target="_blank"><tt>qml.RZ</tt></a>. `qml.RZ` is a parametrized operation,
 and so we must specify not only a wire, but an angle of rotation:
 

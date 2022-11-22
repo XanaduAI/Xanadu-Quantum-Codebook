@@ -38,4 +38,4 @@ $$
 -\frac{\hat{H}}{\hbar} = \alpha (Z_0 + Z_1) + \beta X_0 X_1.
 $$
 
-*Tip.* For exponentiating $X_0X_1$, you will find <a href="https://pennylane.readthedocs.io/en/stable/code/api/pennylane.PauliRot.html" target="_blank"><tt>qml.PauliRot</tt></a> helpful.
+*Tip.* For exponentiating $X_0X_1$, you will find <a href="https://docs.pennylane.ai/en/stable/code/api/pennylane.PauliRot.html" target="_blank"><tt>qml.PauliRot</tt></a> helpful.

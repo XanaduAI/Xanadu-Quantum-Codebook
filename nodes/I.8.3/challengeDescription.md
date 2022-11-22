@@ -3,7 +3,7 @@
 Having done this manually a few times, you might wonder whether there are any
 automated tools to perform such state preparation. PennyLane contains a library
 of
-[**templates**](https://pennylane.readthedocs.io/en/stable/introduction/templates.html),
+[**templates**](https://docs.pennylane.ai/en/stable/introduction/templates.html),
 some of which perform state preparation. Templates are subroutines that can be
 used in quantum circuits just like any other gate:
 
@@ -13,7 +13,7 @@ def my_circuit():
 ```
 
 PennyLane contains a template called
-[`MottonenStatePreparation`](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.MottonenStatePreparation.html),
+[`MottonenStatePreparation`](https://docs.pennylane.ai/en/stable/code/api/pennylane.MottonenStatePreparation.html),
 which will automatically prepare any normalized qubit state vector, up to a
 global phase. You need only pass the template a normalized state vector, and a
 set of wires.  This is especially convenient for multi-qubit systems, where it

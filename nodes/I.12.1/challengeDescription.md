@@ -10,7 +10,7 @@ $$
 \end{equation}\tag{1}
 $$
 
-where $\vert \psi\rangle, \vert \varphi\rangle$ are single-qubit states.
+where $\vert \psi\rangle$ and $\vert \varphi\rangle$ are single-qubit states.
 
 Regular states can be turned into entangled states using **entangling
 operations**. Operations are considered entangling if there is at least one
@@ -19,7 +19,7 @@ state.
 
 The prime example of such an operation is the controlled-NOT, or **CNOT** gate
 (also sometimes written as "CX"). This gate applies a Pauli $X$ gate to a **target
-qubit** only if a **control qubit** is in state $|1\rangle$. You'll recognize
+qubit** if and only if a **control qubit** is in state $|1\rangle$. You'll recognize
 its circuit diagram element from earlier nodes:
 
 <img src="pics/cnot.svg" width="200px">
@@ -28,7 +28,7 @@ its circuit diagram element from earlier nodes:
 small solid dot, and the target qubit is the one being acted on by the $X$
 operation.)
 
-In PennyLane, CNOTs can be applied using [`qml.CNOT`](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.CNOT.html)
+In PennyLane, CNOTs can be applied using [`qml.CNOT`](https://docs.pennylane.ai/en/stable/code/api/pennylane.CNOT.html)
 and the following syntax:
 
 ```python
@@ -43,7 +43,7 @@ where `control` and `target` are the wire labels (e.g., `qml.CNOT(wires=[0, 1])`
 ***Codercise I.12.1.*** Write a circuit that implements a $CNOT$ gate between two
    qubits. Test it out on all four computational basis states. What are the
    resulting states? Express your answer in a dictionary that takes the form
-   of a *truth table*, i.e., a table that details a set of output bits given the
+   of a *truth table*, i.e., a table that details a set of output bits, given the
    set of input bits:
 
 <table style="align:center" cellspacing="20" cellpadding="15">

@@ -11,7 +11,7 @@ U(\phi, \theta, \omega) = \begin{pmatrix} e^{-i(\phi + \omega)/2} \cos(\theta/2)
 $$
 
 In PennyLane, this parametrized operation is implemented as a gate called
-<a href="https://pennylane.readthedocs.io/en/stable/code/api/pennylane.Rot.html" target="_blank"><tt>Rot</tt></a>. `Rot` takes three parameters, which are precisely the angles in the formula above:
+<a href="https://docs.pennylane.ai/en/stable/code/api/pennylane.Rot.html" target="_blank"><tt>Rot</tt></a>. `Rot` takes three parameters, which are precisely the angles in the formula above:
 
 <code>
 

@@ -1,7 +1,7 @@
 ---
 
 ***Codercise I.7.2.*** Using the results of the previous exercise,
-rewrite the following circuit over the gate set `[RZ, RX]` (recall that
+rewrite the following circuit over the gate set `{RZ, RX}` (recall that
 it is okay for your circuit to work up to a global phase). What is the
 minimum number of such gates needed to do so?
 

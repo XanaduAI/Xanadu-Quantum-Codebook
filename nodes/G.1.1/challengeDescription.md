@@ -19,6 +19,6 @@ happens to amplitudes when we apply the oracle.
 <summary><i>Hint.</i></summary>
 Since the oracle is encoded as
    a matrix, you will need to use the
-   <a href="https://pennylane.readthedocs.io/en/stable/code/api/pennylane.QubitUnitary.html" target="_blank">``QubitUnitary()``</a>
+   <a href="https://docs.pennylane.ai/en/stable/code/api/pennylane.QubitUnitary.html" target="_blank">``QubitUnitary()``</a>
    method in PennyLane.
 </details>

@@ -17,7 +17,7 @@ This sequence of operations corresponds to another well known gate, known as the
 "flips the phase" (i.e., multiplies the phase by $-1$) of the $\vert 1\rangle$
 state, while leaving the $\vert 0\rangle$ state intact. In PennyLane, you can
 implement it by calling <a
-href="https://pennylane.readthedocs.io/en/stable/code/api/pennylane.PauliZ.html"
+href="https://docs.pennylane.ai/en/stable/code/api/pennylane.PauliZ.html"
 target="_blank"><tt>qml.PauliZ</tt></a>. It has the following circuit element:
 
 <img src="pics/z.svg" alt="" width="100px">

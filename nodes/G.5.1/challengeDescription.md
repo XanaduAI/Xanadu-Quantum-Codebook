@@ -16,4 +16,4 @@ Let's start by coding up this new oracle.
 
 ---
 
-***Codercise G.5.1.*** Create an oracle for a random solution set of a given size using the [``MultiControlledX``](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.MultiControlledX.html) gate. Remember that this takes a string for `control_values` (e.g.,``"11011"``) as a parameter rather than a list of bits.
+***Codercise G.5.1.*** Create an oracle for a random solution set of a given size using the [``MultiControlledX``](https://docs.pennylane.ai/en/stable/code/api/pennylane.MultiControlledX.html) gate. Remember that this takes a string for `control_values` (e.g.,``"11011"``) as a parameter rather than a list of bits.

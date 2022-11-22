@@ -15,12 +15,14 @@ matrices. In fact, they are a special type of matrix called a **unitary**
 matrix. For some $2 \times 2$ complex-valued unitary matrix $U$, the state of
 the qubit after an operation is
 
+$$
 \begin{equation}
 \vert \psi^\prime \rangle = U \vert \psi \rangle.
 \end{equation}
+$$
 
 You'll learn all about the properties of unitary matrices and some commonly used
-one in the upcoming nodes. For now, let's simulate the process.
+ones in the upcoming nodes. For now, let's simulate the process.
 
 ---
 

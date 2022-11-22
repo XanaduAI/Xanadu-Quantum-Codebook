@@ -10,7 +10,7 @@ parties share a pair of entangled qubits.
 
 ---
 
-***Codercise I.15.1.*** (a) Prepare your favourite single-qubit quantum state on
+***Codercise I.15.1.*** *(a)* Prepare your favourite single-qubit quantum state on
    the first qubit in the `state_preparation` function below. It can be
    anything, as long as it's a single qubit state (you can even leave the function
    as-is, or make it parametrized!).

@@ -18,4 +18,4 @@ $$
 
 Finally, just like $RX$ and $RZ$, there is a special name for the case where
 $\theta =\pi$: the $Y$ gate (or Pauli $Y$), which is implemented in PennyLane as
-[`qml.PauliY`](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.PauliY.html).
+[`qml.PauliY`](https://docs.pennylane.ai/en/stable/code/api/pennylane.PauliY.html).

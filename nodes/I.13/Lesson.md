@@ -35,8 +35,8 @@ phase** gate.
 
 ***Exercise I.13.1.*** As we did for the $CNOT$, compute the action of
    controlled-$Z$ on the computational basis states. Do this for two cases:
-   first qubit control / second qubit target, and second qubit control / first
-   qubit target. What do you notice about these two cases?
+   for the first qubit as control and the second qubit as target, and for the second qubit as control and first
+   qubit as target. What do you notice about these two cases?
 
 
 <details>
@@ -180,7 +180,7 @@ which looks precisely like a controlled-$CNOT$.
   <summary><i>Hint.</i></summary>
 
  We are working with bits, and so are dealing with a Boolean
- function. Consider which states actually get affected by the Toffoli - what
+ function. Consider which states actually get affected by the Toffoli — what
  Boolean operation produces a non-zero result only for those states when fed the
  two control bits? What other Boolean operation can be applied to use that
  result to modify the target bit?
@@ -234,7 +234,7 @@ The action of the Toffoli is
 
 
 If you look closely at the bits, you'll find that $TOF|abc\rangle = |ab(c\oplus
-ab)\rangle$. The value of the AND of bits $a$ and $b$ gets added to the third
+(a\cdot b))\rangle$. The value of the AND of bits $a$ and $b$ gets added to the third
 bit modulo 2. ▢
 
 </details>
@@ -243,16 +243,16 @@ bit modulo 2. ▢
 
 As a final point, in a previous section, we discussed quantum circuit synthesis.
 We now know that $\{CNOT, H, T\}$ is a universal gate set for multi-qubit
-gates. That means we should be able to decompose gates like the Toffoli
-down into 1- and 2-qubit gates. Often, this can be done in multiple ways. For
-example, the following two circuits below both implement the Toffoli:
+gates. That means we should be able to decompose gates like the Toffoli gate
+down into 1- and 2-qubit gates. Often, this can be done in multiple different ways. For
+example, the following two circuits below both implement the Toffoli gate:
 
 <img src="pics/toffoli-decomp.svg" width="400px">
 
 <img src="pics/toffoli-decomp_2.svg" width="450px">
 
 You can see that each of them require the same number of $T$ gates, however the
-$T$ depth is different, as are the number of $CNOT$s. The one you would choose if
+$T$ depth is different, as is the number of $CNOT$s. The one you would choose if
 you were implementing a circuit in practice depends on a number of factors, such
 as how easy it is to perform two-qubit operations in your physical system (if
 it's hard, better to choose the second implementation since it uses fewer

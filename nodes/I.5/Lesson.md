@@ -208,8 +208,8 @@ representation looks.
 
 ---
 
-***Exercise I.5.5.*** How can you implement the adjoint of $S$, $S^\dagger$
-   using only $S$ gates? Similarly, implement the adjoint of $T$, $T^\dagger$
+***Exercise I.5.5.*** How can you implement the adjoint of $S$, $S^\dagger$,
+   using only $S$ gates? Similarly, implement the adjoint of $T$, $T^\dagger$,
    using only $T$ gates.
 
 <details>

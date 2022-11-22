@@ -29,7 +29,7 @@ different terms simply by tinkering with the control values.
 
 ---
 
-***Codercise I.13.5.*** Consider the $3$-controlled-NOT below. Can you implement
+***Codercise I.13.5.*** Consider the 3-controlled-NOT below. Can you implement
    this gate using only Toffolis? You'll need one extra qubit to do so; this is
    called an *auxiliary* qubit, and note that it both starts and ends in the
    state $\vert 0 \rangle$.
@@ -54,6 +54,6 @@ different terms simply by tinkering with the control values.
 
 </details>
 
-*Challenge*. Once you figure out the solution, try and do the $4$-controlled case
+*Challenge*. Once you figure out the solution, try and do the 4-controlled case
  (you'll need one additional auxiliary qubit). Can you see how this generalizes
  to larger and larger gates?

@@ -12,8 +12,8 @@ def decomposed_rot(phi, theta, omega):
 
 Even though `Rot` is the most general single-qubit operation, under the hood
 it's just `RZ` and `RY` gates! This begs the question of whether we actually
-need `RX` - essentially, the answer is no. In fact, in general, as long as we
-have two rotations out of the set `[RX, RY, RZ]`, we can implement any
+need `RX` — essentially, the answer is no. In fact, in general, as long as we
+have two rotations out of the set `{RX, RY, RZ}`, we can implement any
 single-qubit operation; it's just a matter of finding the angles that work,
 which could be mathematically cumbersome. Together, `RZ` and `RY` form a
 universal gate set for single-qubit operations (as do `RZ` and `RX`, or `RY` and

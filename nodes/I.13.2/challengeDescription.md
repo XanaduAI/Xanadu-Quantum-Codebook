@@ -1,6 +1,6 @@
 ---
 
-***Codercise I.13.2.*** The **SWAP** operation ([`qml.SWAP`](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.SWAP.html)) exchanges the states of two qubits. 
+***Codercise I.13.2.*** The **SWAP** operation ([`qml.SWAP`](https://docs.pennylane.ai/en/stable/code/api/pennylane.SWAP.html)) exchanges the states of two qubits. 
 
 <img src="pics/swap.svg" width="100px">
 

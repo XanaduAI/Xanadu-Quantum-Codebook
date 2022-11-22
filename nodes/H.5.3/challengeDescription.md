@@ -25,4 +25,4 @@ automatically Trotterize.
 ---
 
 ***Codercise H.5.3.*** Write a function that returns $H/\hbar$ for the Hamiltonian in (\ref{J3}) for two
-   interacting electrons using the <a href="https://pennylane.readthedocs.io/en/stable/code/api/pennylane.Hamiltonian.html" target="_blank"><tt>qml.Hamiltonian</tt></a> method.
+   interacting electrons using the <a href="https://docs.pennylane.ai/en/stable/code/api/pennylane.Hamiltonian.html" target="_blank"><tt>qml.Hamiltonian</tt></a> method.

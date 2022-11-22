@@ -28,11 +28,11 @@ Z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
 $$
 
 is Hermitian, and has eigenvalues $1$ and $-1$ with corresponding eigenvectors,
-or eigenstates $\vert 0\rangle$ and $\vert 1\rangle$. Similarly, Pauli $X$ is
+or eigenstates, $\vert 0\rangle$ and $\vert 1\rangle$. Similarly, the Pauli $X$ matrix is
 Hermitian and has eigenvalues $1$ and $-1$, but the associated eigenstates are
 $\vert +\rangle$ and $\vert -\rangle$. If we were to "measure the observable
 Pauli $Z$" (or Pauli $X$) for a given qubit state, we would obtain one of the
-two possible eigenvalues. (This is why in the earlier nodes, we computed the
+two possible eigenvalues. (This is why, in earlier nodes, we computed the
 eigenvalues of some of these operations!) Furthermore, following the
 measurement, the qubit's state will be that of the eigenvector of the
 corresponding measurement outcome.
@@ -89,7 +89,7 @@ $$
 B = \begin{pmatrix} 1 & -2i \\ 2i & 2 \end{pmatrix}.
 $$
 
- (a) What are the possible outcomes of the measurement?
+ *(a)* What are the possible outcomes of the measurement?
 
 
 <details>
@@ -118,7 +118,7 @@ $\lambda_1 = 3.56155281$ and $\lambda_2=-0.56155281$.  ▢
  </details>
 
 
-(b) For each outcome, what state is the qubit in after the measurement? Express
+*(b)* For each outcome, what state is the qubit in after the measurement? Express
 this in the computational basis.
 
 <details>
@@ -137,7 +137,7 @@ $$
 
 </details>
 
-(c) What is the expectation value of $B$ computed analytically?
+*(c)* What is the expectation value of $B$, computed analytically?
 
 <details>
   <summary><i>Solution.</i></summary>
@@ -153,15 +153,16 @@ The analytical expectation value is
 
 </details>
 
-(d) Suppose we prepared this state and measured $B$ 1000 times. 816 of the trials yielded the larger of the two possible measurement outcomes, and the remaining tries yielded the smaller one. What is the experimentally-obtained expectation value of $B$?  
+*(d)* Suppose we prepared this state and measured $B$ 1000 times. 816 of the trials yielded the larger of the two possible measurement outcomes, and the remaining tries yielded the smaller one. What is the experimentally-obtained expectation value of $B$?  
 
 
 <details>
   <summary><i>Solution.</i></summary>
+
  To compute the experimentally obtained eigenvalue, we take the weighted average:
  $$
  \langle \tilde{B} \rangle = \frac{816 \cdot 3.56155281 + 184 \cdot (-0.56155281)}{1000} = 2.802901.
  $$
- The experimentally-obtained value does not exactly match the analytically-obtained one in this case, but will do so in the limit of an infinite number of trials. ▢
+ The experimentally obtained value does not exactly match the analytically obtained one in this case, but will do so in the limit of an infinite number of trials. ▢
 
 </details>

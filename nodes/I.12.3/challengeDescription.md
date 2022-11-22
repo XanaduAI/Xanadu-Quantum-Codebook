@@ -27,10 +27,10 @@ operations**.
 
 PennyLane contains a number of common controlled operations, for
 example,
-[`qml.CRX`](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.CRX.html),
-[`qml.CRY`](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.CRY.html)
+[`qml.CRX`](https://docs.pennylane.ai/en/stable/code/api/pennylane.CRX.html),
+[`qml.CRY`](https://docs.pennylane.ai/en/stable/code/api/pennylane.CRY.html)
 and
-[`qml.CRZ`](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.CRz.html). These
+[`qml.CRZ`](https://docs.pennylane.ai/en/stable/code/api/pennylane.CRz.html). These
 implement the appropriate rotation depending on the state of the control
 qubit. For example,
 

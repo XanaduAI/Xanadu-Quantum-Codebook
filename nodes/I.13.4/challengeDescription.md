@@ -13,7 +13,7 @@ The idea of a controlled-controlled-NOT generalizes to
 
 ***Codercise I.13.4.*** In PennyLane, mixed-polarity multi-controlled Toffoli
 gates can be easily implemented using the
-[`MultiControlledX`](https://pennylane.readthedocs.io/en/latest/code/api/pennylane.MultiControlledX.html)
+[`MultiControlledX`](https://docs.pennylane.ai/en/latest/code/api/pennylane.MultiControlledX.html)
 operation. With this gate, control wires, and a string of control bits, `control_values`, are 
 specified as input arguments, like the example below:
 

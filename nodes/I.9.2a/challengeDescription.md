@@ -36,7 +36,7 @@ in.
 
 ---
 
-***Codercise I.9.2.*** (a) Suppose we have prepared the state
+***Codercise I.9.2.*** *(a)* Suppose we have prepared the state
 
 $$
 \vert \psi\rangle = \frac{1}{2} \vert 0\rangle + i \frac{\sqrt{3}}{2} \vert 1\rangle,

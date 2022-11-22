@@ -1,7 +1,7 @@
 ---
 
 *Tip*. You can also specify a custom observable using
-[`qml.Hermitian`](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.Hermitian.html). For
+[`qml.Hermitian`](https://docs.pennylane.ai/en/stable/code/api/pennylane.Hermitian.html). For
 example,
 
 ```python

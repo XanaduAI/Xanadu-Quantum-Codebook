@@ -3,31 +3,31 @@ problems, we need to compute a measurable quantity that relates to some property
 of the system. Such properties are called **observables**. Mathematically,
 observables correspond to Hermitian matrices, i.e., matrices $B$ such that
 $B=B^\dagger$. Each observable has some set of possible measurement outcomes,
-corresponding to their real eigenvalues. However, since measurement is
-probabilistic, we usually want to look for the **expectation value**, denoted by
-$\langle B \rangle$, of that physical property.
+corresponding to its real eigenvalues. However, since measurement is
+probabilistic, we usually want to look for the **expectation value** of that physical property, denoted by
+$\langle B \rangle$.
 
 
 It is very straightforward to compute expectation values in PennyLane. We can
 simply replace the
-[`qml.probs`](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.probs.html)
-of the previous sections with
-[`qml.expval`](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.expval.html),
+[`qml.probs`](https://docs.pennylane.ai/en/stable/code/api/pennylane.probs.html)
+of the previous node with
+[`qml.expval`](https://docs.pennylane.ai/en/stable/code/api/pennylane.expval.html),
 and specify the observable to be measured. Common choices are
-[`qml.PauliX`](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.PauliX.html),
-[`qml.PauliY`](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.PauliY.html),
+[`qml.PauliX`](https://docs.pennylane.ai/en/stable/code/api/pennylane.PauliX.html),
+[`qml.PauliY`](https://docs.pennylane.ai/en/stable/code/api/pennylane.PauliY.html),
 and
-[`qml.PauliZ`](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.PauliZ.html),
+[`qml.PauliZ`](https://docs.pennylane.ai/en/stable/code/api/pennylane.PauliZ.html),
 as many algorithms that solve physical problems require computing the
 expectation values of the Pauli operators. The possible outcomes of measuring
 any Pauli-based expectation value are either $1$ or $-1$, as these are their
 eigenvalues.
 
 *Tip.* These three Pauli operators are unitary *and* Hermitian. They
-can therefore be used both as gates in circuits, and considered as observables.
+can therefore be both used as gates in circuits, and considered as observables.
 
 To measure an expectation value in PennyLane, we must specify which observable
-we are measuring, and which wires it acts on.  For example, if we wanted to
+we are measuring and which wires it acts on.  For example, if we wanted to
 return a measurement of the `PauliZ` observable acting on a single qubit, we
 would write
 

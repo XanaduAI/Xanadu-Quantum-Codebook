@@ -6,7 +6,7 @@
    implement in those frameworks than other gates, and therefore a common task
    in quantum circuit design is minimization of the $T$-count and $T$-depth
    (i.e., the number of layers of depth in a circuit which contain a
-   $T$/$T^\dagger$). Many such tools for optimizing quantum circuits are
+   $T$ or $T^\dagger$). Many such tools for optimizing quantum circuits are
    automated, however we can work out a simple example by hand. Suppose that we
    want to implement the following circuit:
 

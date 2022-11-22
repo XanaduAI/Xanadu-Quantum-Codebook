@@ -49,7 +49,7 @@ distribution of outcomes.
 <details>
   <summary><i>Example.</i></summary>
 
-  Suppose we are given two states
+  Suppose we are given a state
 
   <pre>
   state = np.array([0.8, 0.6])</pre>

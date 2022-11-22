@@ -10,7 +10,7 @@ expectation value in the same way as we would normally take a *weighted
 average*, i.e.,
 
 $$
-\langle Y \rangle = \frac{1 \cdot (\text{num. 1s}) + (-1) \cdot (\text{num. -1s})}{\text{num_shots}}. \tag{1}
+\langle Y \rangle = \frac{1 \cdot (\text{number of 1s}) + (-1) \cdot (\text{number of -1s})}{\text{number of shots}}. \tag{1}
 $$
 
 In PennyLane, we can access samples directly by returning `qml.sample`
@@ -26,5 +26,5 @@ def my_circuit():
 ---
 
 ***Codercise I.10.3.*** Using the circuit from earlier, replace the `qml.expval`
-   measurement with `qml.sample`. Then, write a function to compute an estimate of the
+   measurement with [`qml.sample`](https://docs.pennylane.ai/en/stable/code/api/pennylane.sample.html). Then, write a function to compute an estimate of the
    expectation value based on the samples.

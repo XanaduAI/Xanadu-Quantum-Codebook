@@ -10,6 +10,6 @@ The layer of Hadamards is called the **Hadamard transform**. Let's see what this
 
 ---
 
-***Codercise A.5.1.*** Implement the circuit above, consisting of a Hadamard transform, an oracle, and a Hadamard transform. The oracle is provided as ``oracle_matrix(combo)``, which you can invoke using the [``QubitUnitary()``](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.QubitUnitary.html) function.
+***Codercise A.5.1.*** Implement the circuit above, consisting of a Hadamard transform, an oracle, and a Hadamard transform. The oracle is provided as ``oracle_matrix(combo)``, which you can invoke using the [``QubitUnitary()``](https://docs.pennylane.ai/en/stable/code/api/pennylane.QubitUnitary.html) function.
 
-*Tip*. To implement the Hadamard transform, apply PennyLane's [``broadcast()``](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.broadcast.html) function instead of a ``for`` loop. This applies a unitary multiple times according to a given pattern, and for a specified set of wires.
+*Tip*. To implement the Hadamard transform, apply PennyLane's [``broadcast()``](https://docs.pennylane.ai/en/stable/code/api/pennylane.broadcast.html) function instead of a ``for`` loop. This applies a unitary multiple times according to a given pattern, and for a specified set of wires.

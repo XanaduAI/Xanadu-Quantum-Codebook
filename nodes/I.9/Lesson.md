@@ -28,7 +28,7 @@ $$
  \vert \psi\rangle = \alpha \vert 0\rangle + \beta \vert 1\rangle.
 $$
 
-Earlier, we learned that if we measure this qubit, we will observe it in state
+Earlier we learned that, if we measure this qubit, we will observe it in state
 $\vert 0\rangle$ with probability $\vert \alpha\vert ^2 = \alpha \alpha^*$, and
 in state $\vert 1\rangle$ with probability $\vert \beta\vert ^2$.
 
@@ -80,10 +80,10 @@ we take the modulus squared of the inner product to obtain a real-valued
 probability.
 
 *Tip*. You might be wondering something: after the qubit in a superposition is
- measured, is it still in that superposition? The answer to this is surprisingly
- "no". Once a quantum state has been measured, and we observe its output state,
+ measured, is it still in that superposition? The answer to this is, surprisingly,
+ *no*. Once a quantum state has been measured, and we observe its output state,
  it will remain in that state until further processing is done. Or, in briefer
- terms, "what you see is what you get".
+ terms, *what you see is what you get*.
 
 ## Bases
 
@@ -132,7 +132,7 @@ Do these states form a basis?
 
 ---
 
-There are an *infinite* number of bases you can use to represent a qubit
+There is an *infinite* number of bases you can use to represent a qubit
 state. However, by far the most common ones are the computational basis and the
 Hadamard basis. In what follows, you'll learn how to perform measurements in
 different bases.

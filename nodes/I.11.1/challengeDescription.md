@@ -1,21 +1,21 @@
 We've worked a couple of times now with circuits that have more than one qubit,
-but haven't really gone into detail yet about how this all works. The
+but we haven't yet really gone into detail about how this all works. The
 single-qubit computational basis consists of $|0\rangle$ and $|1\rangle$. When
-we put more than one qubit together, their states combine using the *tensor
+we deal with multiple qubits, their states combine using the *tensor
 product* (see the accompanying textbook page for details about how this works
 mathematically). The multi-qubit computational basis is the set of multi-qubit
-states containing all possible combinations of $|0\rangle$ and $|1\rangle$. For
+states that contain all possible combinations of $|0\rangle$ and $|1\rangle$. For
 example, for the 2-qubit case, we have $|00\rangle, |01\rangle, |10\rangle,
 |11\rangle$.
 
-You may notice that these correspond to the numbers 0-3 in binary; this is not
-an accident! It is common to write out the integer value, especially for large
+You may notice that these correspond to the numbers $\{0,1,2,3\}$ in binary; this is not
+an accident! It is common to write out the integer values, especially for a large
 number of qubits, e.g., $|10\rangle \rightarrow |2\rangle$, $|111\rangle
 \rightarrow |7\rangle$.
 
-**Important: qubit-ordering convention** In PennyLane, the qubits are indexed
+**Important: qubit-ordering convention.** In PennyLane, qubits are indexed
   numerically from left to right. Therefore, a state such as $|10100\rangle$
-  indicates that the first and third qubit (or, wires `0` and `2`) are in state
+  indicates that the first and third qubit (or wires `0` and `2`) are in state
   $|1\rangle$, and the second, fourth, and fifth qubit are in state
   $|0\rangle$. When drawing quantum circuits, our convention is that the
   leftmost (first) qubit is at the *top* of the circuit, such that qubits
@@ -40,7 +40,7 @@ library!
   <summary><i>Hint.</i></summary>
 
 You will find the `numpy` function [`np.binary_repr`](https://numpy.org/doc/stable/reference/generated/numpy.binary_repr.html)
-helpful for this challenge.
+helpful for this codercise.
 
 </details>
 
@@ -50,7 +50,7 @@ helpful for this challenge.
  There are two ways to solve this challenge. The first is to manipulate the
  individual qubits based on the bit values. The second is to use a built-in
  state preparation template.  Check out the [PennyLane template
- library](https://pennylane.readthedocs.io/en/stable/introduction/templates.html)
+ library](https://docs.pennylane.ai/en/stable/introduction/templates.html)
  and see if there are any predefined functions that will help you.
 
 </details>

@@ -26,8 +26,8 @@ $$
 
 where $\vert \psi^\prime \rangle$ is the new state.
 
-However, recall that qubit state vectors have some special properties - in
-particular, they are normalized, i.e., have length 1. Thus, any matrix that
+However, recall that qubit state vectors have some special properties — in
+particular, they are normalized, i.e., they have length 1. Thus, any matrix that
 operates on qubits is going to require a structure that preserves this property.
 Matrices of this type are called **unitary matrices**. More formally, an $n
 \times n$ complex-valued matrix $U$ is unitary if

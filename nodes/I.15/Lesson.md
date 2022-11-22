@@ -138,7 +138,7 @@ $$
 This is where things get tricky, but also very interesting. The third step of
 the protocol is to apply a $CNOT$ and a Hadamard to the first two qubits. This is
 done prior to the measurements, and labelled "change of basis". But what basis
-is this? Notice how these two gates are the *opposite* of what we do to create a
+is this? Notice how these two gates are the *opposite* of what we want do to create a
 Bell state. If we run them in the opposite direction, we transform the basis
 back to the computational one, and simulate a measurement in the *Bell
 basis*. The Bell basis is a set of four entangled states
@@ -154,7 +154,7 @@ $$
 
 After the basis transform, if we observe the first two qubits to be in the state
 $\vert 00\rangle$, this would correspond to the outcome $\vert \psi_+\rangle$ in
-the bell basis, $\vert 11\rangle$ would correspond to $\vert \phi_-\rangle$,
+the Bell basis, $\vert 11\rangle$ would correspond to $\vert \phi_-\rangle$,
 etc.
 
 ---

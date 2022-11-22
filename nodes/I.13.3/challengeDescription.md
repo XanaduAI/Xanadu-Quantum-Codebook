@@ -45,16 +45,16 @@ the result is 1). But by adding another bit to store the result, we can make a
 reversible AND: the Toffoli.
 
 \begin{equation}
-TOF (abc) =  ab (c \oplus ab). \tag{1}
+TOF (abc) =  ab (c \oplus (a \cdot b)). \tag{1}
 \end{equation}
 
 The operation keeps the two bits we are taking the AND of intact, and adds the
 results modulo 2 to a third bit, $c$. The quantum equivalent of Toffoli acts on
 the computational basis states in the same way:
-x
-$$
-TOF|abc\rangle = |ab(c\oplus ab)\rangle. \tag{2}
-$$
+
+\begin{equation}
+TOF|abc\rangle = |ab(c\oplus {a \cdot b))\rangle. \tag{2}
+\end{equation}
 
 Now, the AND operation only products a non-zero result when the first two bits
 are 1; when this is true, it adds 1 to the bit $c$, which is equivalent to
@@ -62,11 +62,11 @@ performing a NOT gate (flipping the bit). For this reason, the Toffoli is also
 known as a controlled-controlled-NOT. Instead of controlling on the state of
 just one qubit, we control on the state of two. That means that the NOT, or $X$,
 is applied only if *both* qubits are in the state $\vert 1\rangle$. In a
-circuit, the Toffoli looks like this:
+circuit, the Toffoli gate looks like this:
 
 <img src="pics/toffoli.svg" width="100px">
 
-In PennyLane, [`qml.Toffoli`](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.Toffoli.html)
+In PennyLane, [`qml.Toffoli`](https://docs.pennylane.ai/en/stable/code/api/pennylane.Toffoli.html)
 is called using the following syntax:
 
 ```python

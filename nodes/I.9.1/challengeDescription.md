@@ -26,7 +26,7 @@ at the end of our QNodes, we can swap it out for
 return qml.probs(wires=...)
 ```
 
-where note that we must explicitly specify the wire labels
+where we must explicitly specify the wire labels
 of the qubits we would like to measure.
 
 ---

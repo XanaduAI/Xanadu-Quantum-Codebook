@@ -11,7 +11,7 @@ $$
 
 This is called a **bit flip**, or NOT operation. It is also known as the **Pauli
 X**, or $X$ gate, and can be found in PennyLane as <a
-href="https://pennylane.readthedocs.io/en/stable/code/api/pennylane.PauliX.html"
+href="https://docs.pennylane.ai/en/stable/code/api/pennylane.PauliX.html"
 target="_blank"><tt>qml.PauliX</tt></a>. There are two ways to write it in a
 quantum circuit:
 

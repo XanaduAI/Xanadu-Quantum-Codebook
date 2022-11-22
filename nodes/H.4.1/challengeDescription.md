@@ -69,5 +69,5 @@ where $\theta = 2\alpha t/\hbar$.
 ***Codercise H.4.1.*** Implement the circuit drawn above, allowing for the specification of an initial computational basis state.
 
 *Tip.* Try using 
-<a href="https://pennylane.readthedocs.io/en/stable/code/api/pennylane.BasisState.html" target="_blank"><tt>qml.BasisState</tt></a> 
+<a href="https://docs.pennylane.ai/en/stable/code/api/pennylane.BasisState.html" target="_blank"><tt>qml.BasisState</tt></a> 
 to prepare the basis state.

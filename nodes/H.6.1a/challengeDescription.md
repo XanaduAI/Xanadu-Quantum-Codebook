@@ -43,5 +43,5 @@ Let's code this up and check it works for a concrete example.
    of the state just yet.
 
 *Tip.* Use
- [``qml.ControlledQubitUnitary``](https://pennylane.readthedocs.io/en/stable/code/api/pennylane.ControlledQubitUnitary.html)
+ [``qml.ControlledQubitUnitary``](https://docs.pennylane.ai/en/stable/code/api/pennylane.ControlledQubitUnitary.html)
  to apply these unitaries with control bits.

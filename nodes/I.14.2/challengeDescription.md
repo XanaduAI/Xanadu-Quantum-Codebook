@@ -3,7 +3,7 @@
 <img src="pics/bell-circuits.svg" width="600px">
 
 There may be some variation as well; for example, to create
-$\frac{1}{\sqrt{2}}(\vert 00\rangle + \vert 11\rangle)$, the $Z$ can be applied
+$\frac{1}{\sqrt{2}}(\vert 00\rangle - \vert 11\rangle)$, the $Z$ gate can be applied
 to either qubit to obtain the same result.
 
 ---

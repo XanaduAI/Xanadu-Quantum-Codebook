@@ -11,7 +11,7 @@ $$
 This is one of the most famous operations in all of quantum computing. It is
 called the **Hadamard gate**, and is typically denoted by *H*. In PennyLane, it
 is implemented as <a
-href="https://pennylane.readthedocs.io/en/stable/code/api/pennylane.Hadamard.html"
+href="https://docs.pennylane.ai/en/stable/code/api/pennylane.Hadamard.html"
 target="_blank"><tt>qml.Hadamard</tt></a> In a circuit diagram, it is
 represented as:
 

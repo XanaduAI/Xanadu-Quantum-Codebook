@@ -16,7 +16,7 @@ $$
 
 The way the operation acts on the amplitudes is periodic, and is described by
 simple trigonometric functions. $RX$ is simply rotating the state in its
-two-dimensional space, with some extra complex phases! But, what if we want to
+two-dimensional space, with some extra complex phases! But what if we want to
 change the relative sizes of the amplitudes *without* adding in the complex
 components? 
 

@@ -52,7 +52,7 @@ There are the usual three axes: $x$, $y$, and $z$. Along the $z$ axis, the
 top-most state corresponds to $\vert 0 \rangle$, and the bottom to $\vert 1\rangle$;
 these are the eigenvectors of the Pauli $Z$ operator. Similarly, along the $x$
 axis are the $\vert + \rangle$ and $\vert - \rangle$ states, which are the
-eigenvectors of the Pauli $X$ operator. (You will meet Pauli $Y$ later in node,
+eigenvectors of the Pauli $X$ operator. (You will meet Pauli $Y$ later in this node,
 but the same holds for it and its eigenvectors.)
 
 
@@ -300,7 +300,7 @@ e^{-i\theta X/2} &= I + \left(-i\frac{\theta}{2} X\right) + \frac{1}{2!}\left(-i
 \end{align*}
 $$
 
-However, consider what happens when we apply $X$ more than once - all it does is
+However, consider what happens when we apply $X$ more than once — all it does is
 flip the bit, so applying it twice brings us right back to where we started!
 Therefore, all even powers in this expansion will reduce to $I$, and all odd ones
 to $X$:

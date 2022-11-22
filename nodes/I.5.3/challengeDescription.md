@@ -9,14 +9,14 @@ turn and eighth turn also have their own names: the **phase gate**, $S$, and the
 <img src="pics/st.svg" alt="" width="150px">
 
 In PennyLane, they are implemented directly as the non-parametrized operations
-<a href="https://pennylane.readthedocs.io/en/stable/code/api/pennylane.S.html"
+<a href="https://docs.pennylane.ai/en/stable/code/api/pennylane.S.html"
 target="_blank"><tt>qml.S</tt></a> and <a
-href="https://pennylane.readthedocs.io/en/stable/code/api/pennylane.T.html"
+href="https://docs.pennylane.ai/en/stable/code/api/pennylane.T.html"
 target="_blank"><tt>qml.T</tt></a>.
 
 Now, if we can rotate forwards, we can also rotate backwards by negating the
 angle. These rotations are unitary operations, meaning that $U^{-1} =
-U^{\dagger}$. $U^\dagger$, the conjugate transpose of $U$, is also called the
+U^{\dagger}$. The conjugate transpose of $U$, $U^\dagger$, is also called the
 **adjoint** of $U$. We can compute and apply adjoints with PennyLane, rather
 than simply perform rotations with negative values, as taking the adjoint is
 much more general.
@@ -24,7 +24,7 @@ much more general.
 ---
 
 ***Codercise I.5.3.*** Adjoints in PennyLane can be computed by applying the <a
-   href="https://pennylane.readthedocs.io/en/stable/code/api/pennylane.adjoint.html"
+   href="https://docs.pennylane.ai/en/stable/code/api/pennylane.adjoint.html"
    target="_blank"><tt>qml.adjoint</tt></a> transform to an operation before
    specifying its parameters and wires. For example,
 

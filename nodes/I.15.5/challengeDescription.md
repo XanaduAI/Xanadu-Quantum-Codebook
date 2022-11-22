@@ -1,6 +1,6 @@
 ---
 
-Something looks funny here - the output state we see here is a 3-qubit
+Something looks funny here — the output state we see here is a 3-qubit
 state. How can we determine the state of the third qubit to check whether
 it was correctly teleported?
 
