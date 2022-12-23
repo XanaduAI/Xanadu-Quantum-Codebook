@@ -60,6 +60,7 @@ body:
   - type: checkboxes
     id: terms
     attributes:
+      label: Check other issues
       options:
         - label: I have searched existing GitHub issues to make sure the issue does not already exist.
           required: true
