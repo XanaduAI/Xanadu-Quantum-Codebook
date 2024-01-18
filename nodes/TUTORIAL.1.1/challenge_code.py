@@ -21,8 +21,6 @@ def add_numbers(x, y):
         float: The sum of x and y.
     """
 
-    ##################
-    # YOUR CODE HERE #
-    ##################
+    return x+y;
 
 '''
