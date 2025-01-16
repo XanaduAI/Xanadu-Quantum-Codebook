@@ -1,4 +1,4 @@
-# PennyLane Quantum Codebook
+# PennyLane Codebook
 
 The Xanadu Quantum Codebook is now known as the PennyLane Codebook and is hosted in
 the [PennyLane website](https://pennylane.ai/codebook/).
