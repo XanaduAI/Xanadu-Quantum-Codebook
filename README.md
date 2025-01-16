@@ -1,8 +1,7 @@
 # PennyLane Quantum Codebook
 
-The Xanadu Quantum Codebook is now known as the PennyLane Quantum Codebook and is hosted in
-the [PennyLane website](https://pennylane.ai/codebook/). Not all modules are yet published in this new version of 
-the codebook, but they will all be available soon.
+The Xanadu Quantum Codebook is now known as the PennyLane Codebook and is hosted in
+the [PennyLane website](https://pennylane.ai/codebook/).
 
 # Xanadu Quantum Codebook
 
